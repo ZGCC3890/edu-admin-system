@@ -1,4 +1,4 @@
-# Install script for directory: F:/JetBrains/CPP/libpqxx
+# Install script for directory: F:/JetBrains/CPP_SE/libpqxx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES
-    "F:/JetBrains/CPP/libpqxx/cmake/libpqxx-config.cmake"
-    "F:/JetBrains/CPP/cmake-build-debug/build-libpqxx/libpqxx-config-version.cmake"
+    "F:/JetBrains/CPP_SE/libpqxx/cmake/libpqxx-config.cmake"
+    "F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/libpqxx-config-version.cmake"
     )
 endif()
 
@@ -48,7 +48,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx/libpqxx-targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx/libpqxx-targets.cmake"
-         "F:/JetBrains/CPP/cmake-build-debug/build-libpqxx/CMakeFiles/Export/d6b66e93f8212dd1f00debf9f6654819/libpqxx-targets.cmake")
+         "F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/CMakeFiles/Export/d6b66e93f8212dd1f00debf9f6654819/libpqxx-targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx/libpqxx-targets-*.cmake")
       if(_cmake_old_config_files)
@@ -61,17 +61,17 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "F:/JetBrains/CPP/cmake-build-debug/build-libpqxx/CMakeFiles/Export/d6b66e93f8212dd1f00debf9f6654819/libpqxx-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/CMakeFiles/Export/d6b66e93f8212dd1f00debf9f6654819/libpqxx-targets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "F:/JetBrains/CPP/cmake-build-debug/build-libpqxx/CMakeFiles/Export/d6b66e93f8212dd1f00debf9f6654819/libpqxx-targets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/CMakeFiles/Export/d6b66e93f8212dd1f00debf9f6654819/libpqxx-targets-debug.cmake")
   endif()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("F:/JetBrains/CPP/cmake-build-debug/build-libpqxx/src/cmake_install.cmake")
-  include("F:/JetBrains/CPP/cmake-build-debug/build-libpqxx/include/cmake_install.cmake")
-  include("F:/JetBrains/CPP/cmake-build-debug/build-libpqxx/test/cmake_install.cmake")
+  include("F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/src/cmake_install.cmake")
+  include("F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/include/cmake_install.cmake")
+  include("F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/test/cmake_install.cmake")
 
 endif()
 

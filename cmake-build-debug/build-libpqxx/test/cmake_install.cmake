@@ -1,4 +1,4 @@
-# Install script for directory: F:/JetBrains/CPP/libpqxx/test
+# Install script for directory: F:/JetBrains/CPP_SE/libpqxx/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

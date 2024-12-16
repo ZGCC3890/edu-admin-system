@@ -1,0 +1,2 @@
+localConnection = dbname=postgres user=dboper password=dboper@321 host=120.46.71.168 port=26000 options='-c client_encoding=UTF8'
+cloudConnection = dbname=SMUMS057 user=dboper password=dboper@321 host=120.46.71.168 port=26000 options='-c client_encoding=UTF8'

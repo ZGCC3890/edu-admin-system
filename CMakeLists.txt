@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(CPP)
+project(CPP_SE)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -12,6 +12,16 @@ set(PostgreSQL_LIBRARY "C:/Program Files/PostgreSQL/17/lib/libpq.lib")
 
 add_subdirectory(./libpqxx build-libpqxx)
 
-add_executable(CPP main.cpp
-        ustil.h)
-target_link_libraries(CPP PRIVATE pqxx)
+add_executable(CPP_SE main.cpp
+        ustil.h
+        graphFunctions.cpp
+        graphFunctions.h
+        studentManagement.cpp
+        studentManagement.h
+        teacherManagement.cpp
+        teacherManagement.h
+        userManagement.cpp
+        userManagement.h
+        announceManagement.cpp
+        announceManagement.h)
+target_link_libraries(CPP_SE PRIVATE pqxx)
