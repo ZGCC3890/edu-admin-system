@@ -41,4 +41,15 @@ void Menu(int n);
 //菜单选择
 MENU MenuChoose();
 
+//用户名及标志
+extern bool userName_;
+extern std::string s_userName;
+//用户密码及标志
+extern bool userPassword_;
+extern std::string s_userPassword;
+//登录检查
+bool LoginCheck(const char* identity, pqxx::connection& conn);
+//登录界面
+void LoginGraph(const char* identity, pqxx::connection& conn);
+
 #endif //CPP_SE_USTIL_H

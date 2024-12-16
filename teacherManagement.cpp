@@ -5,7 +5,7 @@
 #include "ustil.h"
 #include "teacherManagement.h"
 
-void teacherManagementGraph(){
+void TeacherManagementGraph(pqxx::connection& conn){
     Menu(1);
     while (true) {
         flushmessage(EM_MOUSE);

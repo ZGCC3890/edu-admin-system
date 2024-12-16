@@ -5,7 +5,7 @@
 #include "ustil.h"
 #include "userManagement.h"
 
-void userManagementGraph(){
+void UserManagementGraph(pqxx::connection& conn){
     Menu(3);
     while (true) {
         flushmessage(EM_MOUSE);

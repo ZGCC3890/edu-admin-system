@@ -31,5 +31,7 @@ void ButtonAnimation(ExMessage m, object x, COLORREF colorOn, COLORREF colorOff,
 void MenuAnimation(int n);
 //重置鼠标
 void InitMouseMsg();
+//清空窗口内容
+void ClearWindow();
 
 #endif //CPP_SE_GRAPHFUNCTIONS_H

@@ -7,6 +7,6 @@
 
 
 
-void userManagementGraph();
+void UserManagementGraph(pqxx::connection& conn);
 
 #endif //CPP_SE_USERMANAGEMENT_H

@@ -5,6 +5,6 @@
 #ifndef CPP_SE_TEACHERMANAGEMENT_H
 #define CPP_SE_TEACHERMANAGEMENT_H
 
-void teacherManagementGraph();
+void TeacherManagementGraph(pqxx::connection& conn);
 
 #endif //CPP_SE_TEACHERMANAGEMENT_H

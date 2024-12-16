@@ -5,7 +5,7 @@
 #include "ustil.h"
 #include "announceManagement.h"
 
-void announceManagementGraph(){
+void AnnounceManagementGraph(pqxx::connection& conn){
     Menu(2);
     while (true) {
         flushmessage(EM_MOUSE);
