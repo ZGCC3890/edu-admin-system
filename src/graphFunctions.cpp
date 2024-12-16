@@ -50,8 +50,8 @@ void ButtonAnimation(ExMessage m, object x, COLORREF colorOn, COLORREF colorOff,
 void MenuAnimation(int n){
     if(msg.x >= 0 && msg.x <= 170) {
         if(msg.y >= 60 && msg.y <= 160 || n == 0)
-            OutputText(25, 100, YELLOW, 20, 0, "学生管理模块", "宋体");
-        else OutputText(25, 100, WHITE, 20, 0, "学生管理模块", "宋体");
+            OutputText(25, 100, YELLOW, 20, 0, "学生选课模块", "宋体");
+        else OutputText(25, 100, WHITE, 20, 0, "学生选课模块", "宋体");
         if(msg.y >= 160 && msg.y <= 260 || n == 1)
             OutputText(25, 200, YELLOW, 20, 0, "教师管理模块", "宋体");
         else OutputText(25, 200, WHITE, 20, 0, "教师管理模块", "宋体");
@@ -74,7 +74,7 @@ void InitMouseMsg() {
 void ClearWindow(){
     setfillcolor(WHITE);
     setlinecolor(WHITE);
-    fillrectangle_({171, 91, 1269, 773});
+    fillrectangle_({171, 0, 1440, 864});
     IMAGE ah;
     loadimage(&ah,R"(.\ahu.jpg)", 250, 80, false);
     putimage(1150, 20, &ah);

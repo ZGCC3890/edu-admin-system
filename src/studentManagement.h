@@ -5,20 +5,34 @@
 #ifndef CPP_SE_STUDENTMANAGEMENT_H
 #define CPP_SE_STUDENTMANAGEMENT_H
 
-extern object lessonSearchButton;
-extern object lessonSelectButton;
-extern object lessonDropButton;
-extern bool lessonSearchGraph_;
-extern bool lessonSelectGraph_;
-extern bool lessonDropGraph_;
-
-//å­¦ç”Ÿç®¡ç†
+//°´Å¥¶ÔÏó
+extern object selectButton[10];     //Ñ¡¿Î°´Å¥
+extern object dropButton[5];        //ÍË¿Î°´Å¥
+extern object sCoursePageUpButton;      //ÒÑÑ¡¿Î±íÉÏÒ»Ò³
+extern object sCoursePageDownButton;    //ÒÑÑ¡¿Î±íÏÂÒ»Ò³
+extern object aCoursePageUpButton;      //¿ÉÑ¡¿Î±íÉÏÒ»Ò³
+extern object aCoursePageDownButton;    //¿ÉÑ¡¿Î±íÏÂÒ»Ò³
+//bool±êÖ¾
+extern bool showSCoursePageButton_;
+extern bool showACoursePageButton_;
+//µ±Ç°Ò³Ãæ¼°×ÜÒ³ÃæÊı
+extern int availableCourseCurPage;
+extern int selectedCourseCurPage;
+extern int availableCourseTotalPage;
+extern int selectedCourseTotalPage;
+//Ñ§Éúid
+extern std::string s_studentId;
+//SQL²éÑ¯½á¹û¶ÔÏó
+extern pqxx::result selectedCourses;
+extern pqxx::result availableCourses;
+//Ñ§Éú¹ÜÀí
 void StudentManagementGraph(pqxx::connection& conn);
-//è¯¾ç¨‹æŸ¥è¯¢
-void LessonSearchGraph();
-//é€‰è¯¾
-void LessonSelectGraph();
-//é€€è¯¾
-void LessonDropGraph();
-
+//²éÑ¯Ñ§Éú×¨Òµ
+std::string GetStudentMajor(std::string student_id, pqxx::connection& conn);
+//¸üĞÂ¿Î³ÌÊı¾İ
+void SearchLessonData(pqxx::connection& conn);
+//»æÖÆ±í¸ñ
+void DrawCoursesTable();
+//»æÖÆ·­Ò³°´Å¥
+void PageButtonDrawing();
 #endif //CPP_SE_STUDENTMANAGEMENT_H

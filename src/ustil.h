@@ -13,7 +13,7 @@
 #define CommonBlue RGB(50, 100, 200)
 #define LightBlue RGB(70, 120, 210)
 
-//ç•Œé¢æšä¸¾ç±»
+//½çÃæÃ¶¾ÙÀà
 enum class MENU{
     STUDENT_MGMT,
     TEACHER_MGMT,
@@ -22,34 +22,34 @@ enum class MENU{
     END
 };
 
-//é¼ æ ‡ä¿¡æ¯ç»“æ„ä½“
+//Êó±êĞÅÏ¢½á¹¹Ìå
 extern ExMessage msg;
 
-//å½“å‰ç•Œé¢
+//µ±Ç°½çÃæ
 extern MENU curGraph;
 
-//sqlæŸ¥è¯¢ç»“æœ
+//sql²éÑ¯½á¹û
 extern pqxx::result res;
 
-//è¯»å–config
+//¶ÁÈ¡config
 std::string LoadConfig();
-//ä»configæ–‡ä»¶è¯»å–é…ç½®ï¼Œå»ºç«‹è¿æ¥
+//´ÓconfigÎÄ¼ş¶ÁÈ¡ÅäÖÃ£¬½¨Á¢Á¬½Ó
 std::pair<std::string, std::string> EstablishConnection(const std::string& filename);
 
-//ç»˜åˆ¶èœå•
+//»æÖÆ²Ëµ¥
 void Menu(int n);
-//èœå•é€‰æ‹©
+//²Ëµ¥Ñ¡Ôñ
 MENU MenuChoose();
 
-//ç”¨æˆ·ååŠæ ‡å¿—
+//ÓÃ»§Ãû¼°±êÖ¾
 extern bool userName_;
 extern std::string s_userName;
-//ç”¨æˆ·å¯†ç åŠæ ‡å¿—
+//ÓÃ»§ÃÜÂë¼°±êÖ¾
 extern bool userPassword_;
 extern std::string s_userPassword;
-//ç™»å½•æ£€æŸ¥
+//µÇÂ¼¼ì²é
 bool LoginCheck(const char* identity, pqxx::connection& conn);
-//ç™»å½•ç•Œé¢
-void LoginGraph(const char* identity, pqxx::connection& conn);
+//µÇÂ¼½çÃæ
+std::string LoginGraph(const char* identity, pqxx::connection& conn);
 
 #endif //CPP_SE_USTIL_H

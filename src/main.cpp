@@ -75,8 +75,8 @@ void Menu(int n) {
     object menuSelect = {0, 60 + n * 100, 170, 100};
     fillrectangle_(menuSelect);
     if(n == 0)
-        OutputText(25, 100, YELLOW, 20, 0, "学生管理模块", "宋体");
-    else OutputText(25, 100, WHITE, 20, 0, "学生管理模块", "宋体");
+        OutputText(25, 100, YELLOW, 20, 0, "学生选课模块", "宋体");
+    else OutputText(25, 100, WHITE, 20, 0, "学生选课模块", "宋体");
     if(n == 1)
         OutputText(25, 200, YELLOW, 20, 0, "教师管理模块", "宋体");
     else OutputText(25, 200, WHITE, 20, 0, "教师管理模块", "宋体");
@@ -117,7 +117,7 @@ bool LoginCheck(const char* identity, pqxx::connection& conn){
     }
     return false;
 }
-void LoginGraph(const char* identity, pqxx::connection& conn) {
+std::string LoginGraph(const char* identity, pqxx::connection& conn) {
     Menu(-2);
 
     object userNameInputBar = {680, 300, 220, 40};
@@ -165,7 +165,7 @@ void LoginGraph(const char* identity, pqxx::connection& conn) {
                     }
                     else if(isInside(msg, loginButton)){
                         if(userName_ && userPassword_ && LoginCheck(identity, conn)){
-                            return;
+                            return s_userName;
                         }
                         else{
                             HWND er = GetHWnd();
