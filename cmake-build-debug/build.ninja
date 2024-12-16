@@ -49,47 +49,47 @@ cmake_ninja_workdir = F$:/JetBrains/CPP_SE/cmake-build-debug/
 
 build cmake_object_order_depends_target_CPP_SE: phony || cmake_object_order_depends_target_pqxx
 
-build CMakeFiles/CPP_SE.dir/main.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/main.cpp || cmake_object_order_depends_target_CPP_SE
-  DEP_FILE = CMakeFiles\CPP_SE.dir\main.cpp.obj.d
+build CMakeFiles/CPP_SE.dir/src/announceManagement.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/src/announceManagement.cpp || cmake_object_order_depends_target_CPP_SE
+  DEP_FILE = CMakeFiles\CPP_SE.dir\src\announceManagement.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IF:/JetBrains/CPP_SE/./easyx/include -IF:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/include -IF:/JetBrains/CPP_SE/libpqxx/include
   OBJECT_DIR = CMakeFiles\CPP_SE.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir\src
 
-build CMakeFiles/CPP_SE.dir/graphFunctions.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/graphFunctions.cpp || cmake_object_order_depends_target_CPP_SE
-  DEP_FILE = CMakeFiles\CPP_SE.dir\graphFunctions.cpp.obj.d
+build CMakeFiles/CPP_SE.dir/src/graphFunctions.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/src/graphFunctions.cpp || cmake_object_order_depends_target_CPP_SE
+  DEP_FILE = CMakeFiles\CPP_SE.dir\src\graphFunctions.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IF:/JetBrains/CPP_SE/./easyx/include -IF:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/include -IF:/JetBrains/CPP_SE/libpqxx/include
   OBJECT_DIR = CMakeFiles\CPP_SE.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir\src
 
-build CMakeFiles/CPP_SE.dir/studentManagement.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/studentManagement.cpp || cmake_object_order_depends_target_CPP_SE
-  DEP_FILE = CMakeFiles\CPP_SE.dir\studentManagement.cpp.obj.d
+build CMakeFiles/CPP_SE.dir/src/main.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/src/main.cpp || cmake_object_order_depends_target_CPP_SE
+  DEP_FILE = CMakeFiles\CPP_SE.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IF:/JetBrains/CPP_SE/./easyx/include -IF:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/include -IF:/JetBrains/CPP_SE/libpqxx/include
   OBJECT_DIR = CMakeFiles\CPP_SE.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir\src
 
-build CMakeFiles/CPP_SE.dir/teacherManagement.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/teacherManagement.cpp || cmake_object_order_depends_target_CPP_SE
-  DEP_FILE = CMakeFiles\CPP_SE.dir\teacherManagement.cpp.obj.d
+build CMakeFiles/CPP_SE.dir/src/studentManagement.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/src/studentManagement.cpp || cmake_object_order_depends_target_CPP_SE
+  DEP_FILE = CMakeFiles\CPP_SE.dir\src\studentManagement.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IF:/JetBrains/CPP_SE/./easyx/include -IF:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/include -IF:/JetBrains/CPP_SE/libpqxx/include
   OBJECT_DIR = CMakeFiles\CPP_SE.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir\src
 
-build CMakeFiles/CPP_SE.dir/userManagement.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/userManagement.cpp || cmake_object_order_depends_target_CPP_SE
-  DEP_FILE = CMakeFiles\CPP_SE.dir\userManagement.cpp.obj.d
+build CMakeFiles/CPP_SE.dir/src/teacherManagement.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/src/teacherManagement.cpp || cmake_object_order_depends_target_CPP_SE
+  DEP_FILE = CMakeFiles\CPP_SE.dir\src\teacherManagement.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IF:/JetBrains/CPP_SE/./easyx/include -IF:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/include -IF:/JetBrains/CPP_SE/libpqxx/include
   OBJECT_DIR = CMakeFiles\CPP_SE.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir\src
 
-build CMakeFiles/CPP_SE.dir/announceManagement.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/announceManagement.cpp || cmake_object_order_depends_target_CPP_SE
-  DEP_FILE = CMakeFiles\CPP_SE.dir\announceManagement.cpp.obj.d
+build CMakeFiles/CPP_SE.dir/src/userManagement.cpp.obj: CXX_COMPILER__CPP_SE_unscanned_Debug F$:/JetBrains/CPP_SE/src/userManagement.cpp || cmake_object_order_depends_target_CPP_SE
+  DEP_FILE = CMakeFiles\CPP_SE.dir\src\userManagement.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IF:/JetBrains/CPP_SE/./easyx/include -IF:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/include -IF:/JetBrains/CPP_SE/libpqxx/include
   OBJECT_DIR = CMakeFiles\CPP_SE.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_SE.dir\src
 
 
 # =============================================================================
@@ -99,7 +99,7 @@ build CMakeFiles/CPP_SE.dir/announceManagement.cpp.obj: CXX_COMPILER__CPP_SE_uns
 #############################################
 # Link the executable CPP_SE.exe
 
-build CPP_SE.exe: CXX_EXECUTABLE_LINKER__CPP_SE_Debug CMakeFiles/CPP_SE.dir/main.cpp.obj CMakeFiles/CPP_SE.dir/graphFunctions.cpp.obj CMakeFiles/CPP_SE.dir/studentManagement.cpp.obj CMakeFiles/CPP_SE.dir/teacherManagement.cpp.obj CMakeFiles/CPP_SE.dir/userManagement.cpp.obj CMakeFiles/CPP_SE.dir/announceManagement.cpp.obj | build-libpqxx/src/libpqxx.a C$:/Program$ Files/PostgreSQL/17/lib/libpq.lib || build-libpqxx/src/libpqxx.a
+build CPP_SE.exe: CXX_EXECUTABLE_LINKER__CPP_SE_Debug CMakeFiles/CPP_SE.dir/src/announceManagement.cpp.obj CMakeFiles/CPP_SE.dir/src/graphFunctions.cpp.obj CMakeFiles/CPP_SE.dir/src/main.cpp.obj CMakeFiles/CPP_SE.dir/src/studentManagement.cpp.obj CMakeFiles/CPP_SE.dir/src/teacherManagement.cpp.obj CMakeFiles/CPP_SE.dir/src/userManagement.cpp.obj | build-libpqxx/src/libpqxx.a C$:/Program$ Files/PostgreSQL/17/lib/libpq.lib || build-libpqxx/src/libpqxx.a
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-Bstatic  -leasyx  build-libpqxx/src/libpqxx.a  -leasyx  -Wl,-Bdynamic  "C:/Program Files/PostgreSQL/17/lib/libpq.lib"  -lwsock32  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LF:/JetBrains/CPP_SE/./easyx/lib64

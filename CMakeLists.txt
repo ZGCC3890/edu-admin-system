@@ -12,16 +12,11 @@ set(PostgreSQL_LIBRARY "C:/Program Files/PostgreSQL/17/lib/libpq.lib")
 
 add_subdirectory(./libpqxx build-libpqxx)
 
-add_executable(CPP_SE main.cpp
-        ustil.h
-        graphFunctions.cpp
-        graphFunctions.h
-        studentManagement.cpp
-        studentManagement.h
-        teacherManagement.cpp
-        teacherManagement.h
-        userManagement.cpp
-        userManagement.h
-        announceManagement.cpp
-        announceManagement.h)
+set(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
+
+file(GLOB_RECURSE SOURCES "${SRC_DIR}/*.cpp")
+file(GLOB_RECURSE HEADERS "${SRC_DIR}/*.h")
+
+add_executable(CPP_SE ${SOURCES} ${HEADERS})
+
 target_link_libraries(CPP_SE PRIVATE pqxx)
