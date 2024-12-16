@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(CPP)
+project(CPP_SE)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -12,7 +12,11 @@ set(PostgreSQL_LIBRARY "C:/Program Files/PostgreSQL/17/lib/libpq.lib")
 
 add_subdirectory(./libpqxx build-libpqxx)
 
-add_executable(CPP main.cpp
-        UserQuery.cpp
-        GoodsQuery.cpp)
-target_link_libraries(CPP PRIVATE pqxx)
+set(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
+
+file(GLOB_RECURSE SOURCES "${SRC_DIR}/*.cpp")
+file(GLOB_RECURSE HEADERS "${SRC_DIR}/*.h")
+
+add_executable(CPP_SE ${SOURCES} ${HEADERS})
+
+target_link_libraries(CPP_SE PRIVATE pqxx)

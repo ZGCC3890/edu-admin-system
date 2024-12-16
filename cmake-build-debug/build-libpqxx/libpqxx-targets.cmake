@@ -50,7 +50,7 @@ unset(_cmake_expected_targets)
 add_library(libpqxx::pqxx STATIC IMPORTED)
 
 set_target_properties(libpqxx::pqxx PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "F:/JetBrains/CPP/cmake-build-debug/build-libpqxx/include;F:/JetBrains/CPP/libpqxx/include"
+  INTERFACE_INCLUDE_DIRECTORIES "F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/include;F:/JetBrains/CPP_SE/libpqxx/include"
   INTERFACE_LINK_LIBRARIES "libeasyx.a;C:/Program Files/PostgreSQL/17/lib/libpq.lib;wsock32;ws2_32"
 )
 
@@ -58,7 +58,7 @@ set_target_properties(libpqxx::pqxx PROPERTIES
 set_property(TARGET libpqxx::pqxx APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(libpqxx::pqxx PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "F:/JetBrains/CPP/cmake-build-debug/build-libpqxx/src/libpqxx.a"
+  IMPORTED_LOCATION_DEBUG "F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/src/libpqxx.a"
   )
 
 # This file does not depend on other imported targets which have
