@@ -13,6 +13,5 @@ set(PostgreSQL_LIBRARY "C:/Program Files/PostgreSQL/17/lib/libpq.lib")
 add_subdirectory(./libpqxx build-libpqxx)
 
 add_executable(CPP main.cpp
-        UserQuery.cpp
-        GoodsQuery.cpp)
+        ustil.h)
 target_link_libraries(CPP PRIVATE pqxx)
