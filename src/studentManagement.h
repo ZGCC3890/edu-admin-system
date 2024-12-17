@@ -13,29 +13,29 @@ extern object sCoursePageDownButton;        //已选课表下一页
 extern object aCoursePageUpButton;          //可选课表上一页
 extern object aCoursePageDownButton;        //可选课表下一页
 extern object courseSearchButton;           //课程筛选按钮
-extern object courseResetButton;           //课程筛选重置按钮
+extern object courseResetButton;            //课程筛选重置按钮
 extern object courseIdInputBar;             //课程编号输入框
 extern object courseNameInputBar;           //课程名称输入框
 extern object courseTeacherNameInputBar;    //任课教师输入框
 //bool标志
-extern bool showSCoursePageButton_;
-extern bool showACoursePageButton_;
-extern bool courseId_;
-extern bool courseName_;
-extern bool courseTeacherName_;
+extern bool showSCoursePageButton_;         //已选课翻页按钮显示标志
+extern bool showACoursePageButton_;         //可选课翻页按钮显示标志
+extern bool courseId_;                      //course_id搜索输入标志
+extern bool courseName_;                    //course_name筛选输入标志
+extern bool courseTeacherName_;             //teacher_name筛选输入标志
 //string
-extern std::string s_studentId;
-extern std::string s_courseId;
-extern std::string s_courseName;
-extern std::string s_courseTeacherName;
+extern std::string s_studentId;             //student_id存储字符串
+extern std::string s_courseId;              //course_id存储字符串
+extern std::string s_courseName;            //course_name存储字符串
+extern std::string s_courseTeacherName;     //teacher_name存储字符串
 //当前页面及总页面数
-extern int availableCourseCurPage;
-extern int selectedCourseCurPage;
-extern int availableCourseTotalPage;
-extern int selectedCourseTotalPage;
+extern int availableCourseCurPage;          //可选课表当前页面
+extern int selectedCourseCurPage;           //已选课表当前页面
+extern int availableCourseTotalPage;        //可选课表总页数
+extern int selectedCourseTotalPage;         //已选课表总页数
 //SQL查询结果对象
-extern pqxx::result selectedCourses;
-extern pqxx::result availableCourses;
+extern pqxx::result selectedCourses;        //已选课表查询结果
+extern pqxx::result availableCourses;       //可选课表查询结果
 //学生管理
 void StudentManagementGraph(pqxx::connection& conn);
 //查询学生专业

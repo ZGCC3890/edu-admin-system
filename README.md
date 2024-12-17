@@ -52,3 +52,8 @@ exampleBool_
 3. 存储用string——变量名前加"s_"   
 string s_exampleString
 
+### 项目说明
+branch-main：主支，一个模块完整实现+注释完全后推送
+branch-release：阶段性进度存储
+branch-feature：开发分支，随时推送
+
