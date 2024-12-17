@@ -9,6 +9,10 @@
 #include <conio.h>
 #include <pqxx/pqxx>
 #include "graphFunctions.h"
+#include "studentManagement.h"
+#include "teacherManagement.h"
+#include "announceManagement.h"
+#include "userManagement.h"
 
 #define CommonBlue RGB(50, 100, 200)
 #define LightBlue RGB(70, 120, 210)

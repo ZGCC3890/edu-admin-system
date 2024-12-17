@@ -61,9 +61,9 @@ void MenuAnimation(int n){
         if(msg.y >= 360 && msg.y <= 460 || n == 3)
             OutputText(25, 400, YELLOW, 20, 0, "用户管理模块", "宋体");
         else OutputText(25, 400, WHITE, 20, 0, "用户管理模块", "宋体");
-        if(msg.y >= 660 && msg.y <= 760)
-            OutputText(65, 700, YELLOW, 20, 0, "退出", "宋体");
-        else OutputText(65, 700, WHITE, 20, 0, "退出", "宋体");
+        if(msg.y >= 760 && msg.y <= 860)
+            OutputText(65, 800, YELLOW, 20, 0, "退出", "宋体");
+        else OutputText(65, 800, WHITE, 20, 0, "退出", "宋体");
     }
 }
 
@@ -74,8 +74,8 @@ void InitMouseMsg() {
 void ClearWindow(){
     setfillcolor(WHITE);
     setlinecolor(WHITE);
-    fillrectangle_({171, 0, 1440, 864});
+    fillrectangle_({171, 96, 1440, 864});
     IMAGE ah;
     loadimage(&ah,R"(.\ahu.jpg)", 250, 80, false);
-    putimage(1150, 20, &ah);
+    putimage(1170, 20, &ah);
 }

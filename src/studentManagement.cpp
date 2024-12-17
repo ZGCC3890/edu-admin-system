@@ -4,7 +4,6 @@
 #include "ustil.h"
 #include "studentManagement.h"
 
-std::string s_studentId;
 int availableCourseCurPage = 0;
 int selectedCourseCurPage = 0;
 int availableCourseTotalPage = 0;
@@ -15,8 +14,20 @@ object sCoursePageUpButton = {1200, 325, 50, 20};
 object sCoursePageDownButton = {1350, 325, 50, 20};
 object aCoursePageUpButton = {1200, 745, 50, 20};
 object aCoursePageDownButton = {1350, 745, 50, 20};
+object courseSearchButton = {990, 55, 100, 30};
+object courseResetButton = {1100, 55, 60, 30};
+object courseIdInputBar = {230, 55, 140, 30};
+object courseNameInputBar = {380, 55, 310, 30};
+object courseTeacherNameInputBar = {700, 55, 260, 30};
+bool courseId_ = false;
+bool courseName_ = false;
+bool courseTeacherName_ = false;
 bool showSCoursePageButton_ = false;
 bool showACoursePageButton_ = false;
+std::string s_studentId;
+std::string s_courseId;
+std::string s_courseName;
+std::string s_courseTeacherName;
 pqxx::result selectedCourses;
 pqxx::result availableCourses;
 void StudentManagementGraph(pqxx::connection& conn) {
@@ -24,9 +35,16 @@ void StudentManagementGraph(pqxx::connection& conn) {
     Menu(0);
     ClearWindow();
     SearchLessonData(conn);
+    DrawingFilter();
     while (true) {
         flushmessage(EM_MOUSE);
+        //菜单及按钮反馈
         MenuAnimation(0);
+        ButtonAnimation(msg, courseSearchButton, WHITE, CommonBlue);
+        ButtonAnimation(msg, courseResetButton, WHITE, CommonBlue);
+        ButtonAnimation(msg, courseIdInputBar, WHITE, CommonBlue);
+        ButtonAnimation(msg, courseNameInputBar, WHITE, CommonBlue);
+        ButtonAnimation(msg, courseTeacherNameInputBar, WHITE, CommonBlue);
         //表格绘制
         DrawCoursesTable();
         //翻页按钮绘制
@@ -36,6 +54,22 @@ void StudentManagementGraph(pqxx::connection& conn) {
             ButtonAnimation(msg, selectButton[i%10], WHITE, CommonBlue);
         for(int i = selectedCourseCurPage * 5; i < std::min(selectedCourseCurPage * 5 + 5, selectedCourses.size()); ++i)
             ButtonAnimation(msg, dropButton[i%5], WHITE, CommonBlue);
+
+        if (courseId_){
+            OutputText(courseIdInputBar.posx + 10, courseIdInputBar.posy + 5, BLACK, 20, 0, s_courseId.c_str(), "宋体");
+        }else{
+            OutputText(courseIdInputBar.posx + 10, courseIdInputBar.posy + 5, RGB(150, 150, 150), 20, 0, "课程编号", "宋体");
+        }
+        if (courseName_){
+            OutputText(courseNameInputBar.posx + 10, courseNameInputBar.posy + 5, BLACK, 20, 0, s_courseName.c_str(), "宋体");
+        }else{
+            OutputText(courseNameInputBar.posx + 10, courseNameInputBar.posy + 5, RGB(150, 150, 150), 20, 0, "课程名称", "宋体");
+        }
+        if (courseTeacherName_){
+            OutputText(courseTeacherNameInputBar.posx + 10, courseTeacherNameInputBar.posy + 5, BLACK, 20, 0, s_courseTeacherName.c_str(), "宋体");
+        }else{
+            OutputText(courseTeacherNameInputBar.posx + 10, courseTeacherNameInputBar.posy + 5, RGB(150, 150, 150), 20, 0, "任课教师名称", "宋体");
+        }
 
         if (peekmessage(&msg, EM_MOUSE)) {
             switch (msg.message) {
@@ -52,26 +86,66 @@ void StudentManagementGraph(pqxx::connection& conn) {
                         fillrectangle_({220, 136, 1190, 180});
                         fillrectangle_({sCoursePageUpButton.posx + 51, sCoursePageUpButton.posy, 90, 30});
                     }
-                    if (showSCoursePageButton_ && isInside(msg, sCoursePageDownButton) && selectedCourseCurPage < selectedCourseTotalPage) {
+                    else if (showSCoursePageButton_ && isInside(msg, sCoursePageDownButton) && selectedCourseCurPage < selectedCourseTotalPage) {
                         ++selectedCourseCurPage;
                         setfillcolor(WHITE);
                         setlinecolor(WHITE);
                         fillrectangle_({220, 136, 1190, 180});
                         fillrectangle_({sCoursePageUpButton.posx + 51, sCoursePageUpButton.posy, 90, 30});
                     }
-                    if (showACoursePageButton_ && isInside(msg, aCoursePageUpButton) && availableCourseCurPage > 0) {
+                    else if (showACoursePageButton_ && isInside(msg, aCoursePageUpButton) && availableCourseCurPage > 0) {
                         --availableCourseCurPage;
                         setfillcolor(WHITE);
                         setlinecolor(WHITE);
                         fillrectangle_({220, 406, 1190, 330});
                         fillrectangle_({aCoursePageUpButton.posx + 51, aCoursePageUpButton.posy, 90, 30});
                     }
-                    if (showACoursePageButton_ && isInside(msg, aCoursePageDownButton) && availableCourseCurPage < availableCourseTotalPage) {
+                    else if (showACoursePageButton_ && isInside(msg, aCoursePageDownButton) && availableCourseCurPage < availableCourseTotalPage) {
                         ++availableCourseCurPage;
                         setfillcolor(WHITE);
                         setlinecolor(WHITE);
                         fillrectangle_({220, 406, 1190, 330});
                         fillrectangle_({aCoursePageUpButton.posx + 51, aCoursePageUpButton.posy, 90, 30});
+                    }
+
+                    //输入框
+                    setfillcolor(WHITE);
+                    if (isInside(msg, courseIdInputBar)) {
+                        fillroundrect_(courseIdInputBar);
+                        char s[100] = " ";
+                        InputBox(s, 100, "请输入课程编号");
+                        courseId_ = true;
+                        s_courseId = s;
+                    }
+                    if (isInside(msg, courseNameInputBar)) {
+                        fillroundrect_(courseNameInputBar);
+                        char s[100] = " ";
+                        InputBox(s, 100, "请输入课程名称");
+                        courseName_ = true;
+                        s_courseName = s;
+                    }
+                    if (isInside(msg, courseTeacherNameInputBar)) {
+                        fillroundrect_(courseTeacherNameInputBar);
+                        char s[100] = " ";
+                        InputBox(s, 100, "请输入任课教师名称");
+                        courseTeacherName_ = true;
+                        s_courseTeacherName = s;
+                    }
+
+                    if (isInside(msg, courseSearchButton)){
+                        if(courseId_ || courseName_ || courseTeacherName_){
+                            ClearWindow();
+                            SearchLessonData(conn);
+                        }
+                    }
+
+                    if (isInside(msg, courseResetButton)) {
+                        courseId_ = false;
+                        courseName_ = false;
+                        courseTeacherName_ = false;
+                        ClearWindow();
+                        SearchLessonData(conn);
+                        DrawingFilter();
                     }
 
                     for (int i = availableCourseCurPage * 10; i < std::min(availableCourseCurPage * 10 + 10, availableCourses.size()); ++i) {
@@ -229,6 +303,18 @@ void SearchLessonData(pqxx::connection& conn){
                         )
                 )
             )";
+    if (courseId_){
+        selectedCoursesSQL += "AND c.course_id = '" + s_courseId + "'";
+        availableCoursesSQL += "AND c.course_id = '" + s_courseId + "'";
+    }
+    if (courseName_){
+        selectedCoursesSQL += "AND c.course_name LIKE '%" + s_courseName + "%'";
+        availableCoursesSQL += "AND c.course_name LIKE '%" + s_courseName + "%'";
+    }
+    if (courseTeacherName_){
+        selectedCoursesSQL += "AND c.teacher_name LIKE '%" + s_courseTeacherName + "%'";
+        availableCoursesSQL += "AND c.teacher_name LIKE '%" + s_courseTeacherName + "%'";
+    }
     //查询学生专业并获得已选课表和可选课表
     std::string major = GetStudentMajor(s_studentId, conn);
     pqxx::work txn(conn);
@@ -273,4 +359,20 @@ void PageButtonDrawing(){
         OutputText(aCoursePageUpButton.posx + 95, aCoursePageUpButton.posy + 3, BLACK, 15, 0, ("|  " + std::to_string(availableCourseTotalPage + 1)).c_str(), "宋体");
     }
 
+}
+
+void DrawingFilter() {
+    OutputText(220, 20, BLACK, 20, 0, "课程筛选", "宋体");
+    setlinecolor(CommonBlue);
+    setfillcolor(CommonBlue);
+    fillroundrect_({220, 45, 750, 50});
+    fillroundrect_(courseSearchButton);
+    fillroundrect_(courseResetButton);
+    setlinecolor(WHITE);
+    setfillcolor(WHITE);
+    fillroundrect_(courseIdInputBar);
+    fillroundrect_(courseNameInputBar);
+    fillroundrect_(courseTeacherNameInputBar);
+    OutputText(courseSearchButton.posx + 30, courseSearchButton.posy + 5, WHITE, 20, 0, "筛选", "宋体");
+    OutputText(courseResetButton.posx + 10, courseResetButton.posy + 5, WHITE, 20, 0, "重置", "宋体");
 }
