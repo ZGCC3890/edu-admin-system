@@ -1,8 +1,8 @@
-# Install script for directory: F:/JetBrains/CPP_SE/libpqxx/test
+# Install script for directory: F:/JetBrains/edu-admin-system/libpqxx/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/CPP")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/edu-admin-system")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

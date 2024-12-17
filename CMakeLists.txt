@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(CPP_SE)
+project(edu-admin-system)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -17,6 +17,6 @@ set(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
 file(GLOB_RECURSE SOURCES "${SRC_DIR}/*.cpp")
 file(GLOB_RECURSE HEADERS "${SRC_DIR}/*.h")
 
-add_executable(CPP_SE ${SOURCES} ${HEADERS})
+add_executable(edu-admin-system ${SOURCES} ${HEADERS})
 
-target_link_libraries(CPP_SE PRIVATE pqxx)
+target_link_libraries(edu-admin-system PRIVATE pqxx)

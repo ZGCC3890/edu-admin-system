@@ -145,6 +145,10 @@ std::string LoginGraph(const char* identity, pqxx::connection& conn) {
         if (peekmessage(&msg, EM_MOUSE)) {
             switch (msg.message) {
                 case WM_LBUTTONDOWN:
+                    if (MenuChoose() != curGraph) {
+                        curGraph = MenuChoose();
+                        if(curGraph == MENU::END) return " ";
+                    }
                     if (isInside(msg, userNameInputBar)){
                         fillroundrect_(userNameInputBar);
                         char s[100] = " ";
