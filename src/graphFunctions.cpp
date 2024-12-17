@@ -50,8 +50,8 @@ void ButtonAnimation(ExMessage m, object x, COLORREF colorOn, COLORREF colorOff,
 void MenuAnimation(int n){
     if(msg.x >= 0 && msg.x <= 170) {
         if(msg.y >= 60 && msg.y <= 160 || n == 0)
-            OutputText(25, 100, YELLOW, 20, 0, "学生管理模块", "宋体");
-        else OutputText(25, 100, WHITE, 20, 0, "学生管理模块", "宋体");
+            OutputText(25, 100, YELLOW, 20, 0, "学生选课模块", "宋体");
+        else OutputText(25, 100, WHITE, 20, 0, "学生选课模块", "宋体");
         if(msg.y >= 160 && msg.y <= 260 || n == 1)
             OutputText(25, 200, YELLOW, 20, 0, "教师管理模块", "宋体");
         else OutputText(25, 200, WHITE, 20, 0, "教师管理模块", "宋体");
@@ -61,9 +61,9 @@ void MenuAnimation(int n){
         if(msg.y >= 360 && msg.y <= 460 || n == 3)
             OutputText(25, 400, YELLOW, 20, 0, "用户管理模块", "宋体");
         else OutputText(25, 400, WHITE, 20, 0, "用户管理模块", "宋体");
-        if(msg.y >= 660 && msg.y <= 760)
-            OutputText(65, 700, YELLOW, 20, 0, "退出", "宋体");
-        else OutputText(65, 700, WHITE, 20, 0, "退出", "宋体");
+        if(msg.y >= 760 && msg.y <= 860)
+            OutputText(65, 800, YELLOW, 20, 0, "退出", "宋体");
+        else OutputText(65, 800, WHITE, 20, 0, "退出", "宋体");
     }
 }
 
@@ -74,8 +74,8 @@ void InitMouseMsg() {
 void ClearWindow(){
     setfillcolor(WHITE);
     setlinecolor(WHITE);
-    fillrectangle_({171, 91, 1269, 773});
+    fillrectangle_({171, 96, 1440, 864});
     IMAGE ah;
     loadimage(&ah,R"(.\ahu.jpg)", 250, 80, false);
-    putimage(1150, 20, &ah);
+    putimage(1170, 20, &ah);
 }

@@ -1,8 +1,4 @@
 #include "ustil.h"
-#include "studentManagement.h"
-#include "teacherManagement.h"
-#include "announceManagement.h"
-#include "userManagement.h"
 
 using namespace std;
 
@@ -24,7 +20,7 @@ int main() {
     //绘制校徽
     IMAGE ah;
     loadimage(&ah,R"(.\ahu.jpg)", 250, 80, false);
-    putimage(1150, 20, &ah);
+    putimage(1170, 20, &ah);
 
     while(true){
         switch (curGraph) {
@@ -75,8 +71,8 @@ void Menu(int n) {
     object menuSelect = {0, 60 + n * 100, 170, 100};
     fillrectangle_(menuSelect);
     if(n == 0)
-        OutputText(25, 100, YELLOW, 20, 0, "学生管理模块", "宋体");
-    else OutputText(25, 100, WHITE, 20, 0, "学生管理模块", "宋体");
+        OutputText(25, 100, YELLOW, 20, 0, "学生选课模块", "宋体");
+    else OutputText(25, 100, WHITE, 20, 0, "学生选课模块", "宋体");
     if(n == 1)
         OutputText(25, 200, YELLOW, 20, 0, "教师管理模块", "宋体");
     else OutputText(25, 200, WHITE, 20, 0, "教师管理模块", "宋体");
@@ -86,7 +82,7 @@ void Menu(int n) {
     if(n == 3)
         OutputText(25, 400, YELLOW, 20, 0, "用户管理模块", "宋体");
     else OutputText(25, 400, WHITE, 20, 0, "用户管理模块", "宋体");
-    OutputText(65, 700, WHITE, 20, 0, "退出", "宋体");
+    OutputText(65, 800, WHITE, 20, 0, "退出", "宋体");
 }
 
 MENU MenuChoose() {
@@ -95,7 +91,7 @@ MENU MenuChoose() {
         else if(msg.y >= 160 && msg.y <= 260) return MENU::TEACHER_MGMT;
         else if(msg.y >= 260 && msg.y <= 360) return MENU::ANNOUNCE_MGMT;
         else if(msg.y >= 360 && msg.y <= 460) return MENU::USER_MGMT;
-        else if(msg.y >= 660 && msg.y <= 760) return MENU::END;
+        else if(msg.y >= 760 && msg.y <= 860) return MENU::END;
     }
     return curGraph;
 }
@@ -117,7 +113,7 @@ bool LoginCheck(const char* identity, pqxx::connection& conn){
     }
     return false;
 }
-void LoginGraph(const char* identity, pqxx::connection& conn) {
+std::string LoginGraph(const char* identity, pqxx::connection& conn) {
     Menu(-2);
 
     object userNameInputBar = {680, 300, 220, 40};
@@ -141,10 +137,10 @@ void LoginGraph(const char* identity, pqxx::connection& conn) {
         ButtonAnimation(msg, loginButton, WHITE, CommonBlue);
 
         if(userName_) OutputText(userNameInputBar.posx + 10, userNameInputBar.posy + 10, BLACK, 22, 0, s_userName.c_str(), "宋体");
-        else OutputText(userNameInputBar.posx + 10, userNameInputBar.posy + 8, BLACK, 22, 0, "请输入用户id", "宋体");
+        else OutputText(userNameInputBar.posx + 10, userNameInputBar.posy + 8, RGB(150, 150, 150), 22, 0, "请输入用户id", "宋体");
 
         if(userPassword_) OutputText(userPasswordInputBar.posx + 10, userPasswordInputBar.posy + 10, BLACK, 22, 0, s_userPassword.c_str(), "宋体");
-        else OutputText(userPasswordInputBar.posx + 10, userPasswordInputBar.posy + 8, BLACK, 22, 0, "请输入用户密码", "宋体");
+        else OutputText(userPasswordInputBar.posx + 10, userPasswordInputBar.posy + 8, RGB(150, 150, 150), 22, 0, "请输入用户密码", "宋体");
 
         if (peekmessage(&msg, EM_MOUSE)) {
             switch (msg.message) {
@@ -165,7 +161,7 @@ void LoginGraph(const char* identity, pqxx::connection& conn) {
                     }
                     else if(isInside(msg, loginButton)){
                         if(userName_ && userPassword_ && LoginCheck(identity, conn)){
-                            return;
+                            return s_userName;
                         }
                         else{
                             HWND er = GetHWnd();

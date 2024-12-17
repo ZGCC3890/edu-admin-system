@@ -9,6 +9,18 @@
     <file url="file://$PROJECT_DIR$/graphFunctions.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/graphFunctions.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/main.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/announceManagement.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/announceManagement.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/graphFunctions.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/graphFunctions.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/studentManagement.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/studentManagement.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/teacherManagement.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/teacherManagement.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/userManagement.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/userManagement.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ustil.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/studentManagement.cpp" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
