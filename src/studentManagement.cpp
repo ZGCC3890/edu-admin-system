@@ -32,6 +32,7 @@ pqxx::result selectedCourses;
 pqxx::result availableCourses;
 void StudentManagementGraph(pqxx::connection& conn) {
     s_studentId = LoginGraph("student", conn);
+    if (s_studentId == " ") return;
     Menu(0);
     ClearWindow();
     SearchLessonData(conn);

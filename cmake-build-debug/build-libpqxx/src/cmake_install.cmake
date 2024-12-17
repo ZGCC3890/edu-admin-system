@@ -1,8 +1,8 @@
-# Install script for directory: F:/JetBrains/CPP_SE/libpqxx/src
+# Install script for directory: F:/JetBrains/edu-admin-system/libpqxx/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/CPP")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/edu-admin-system")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,10 +38,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/src/libpqxx.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/src/libpqxx.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/libpqxx.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/libpqxx.pc")
 endif()
 

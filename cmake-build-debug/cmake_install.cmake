@@ -1,8 +1,8 @@
-# Install script for directory: F:/JetBrains/CPP_SE
+# Install script for directory: F:/JetBrains/edu-admin-system
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/CPP")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/edu-admin-system")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("F:/JetBrains/CPP_SE/cmake-build-debug/build-libpqxx/cmake_install.cmake")
+  include("F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "F:/JetBrains/CPP_SE/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/JetBrains/edu-admin-system/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
