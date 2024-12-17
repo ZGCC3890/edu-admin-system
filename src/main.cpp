@@ -115,7 +115,10 @@ bool LoginCheck(const char* identity, pqxx::connection& conn){
 }
 std::string LoginGraph(const char* identity, pqxx::connection& conn) {
     Menu(-2);
-
+    setfillcolor(WHITE);
+    setlinecolor(WHITE);
+    fillrectangle_({220, 0, 1440, 864});
+    ClearWindow();
     object userNameInputBar = {680, 300, 220, 40};
     object userPasswordInputBar = {680, 300 + 60, 220, 40};
     object loginButton = {730, 360 + 60, 120, 35};
