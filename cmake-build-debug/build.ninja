@@ -56,6 +56,13 @@ build CMakeFiles/edu-admin-system.dir/src/announceManagement.cpp.obj: CXX_COMPIL
   OBJECT_DIR = CMakeFiles\edu-admin-system.dir
   OBJECT_FILE_DIR = CMakeFiles\edu-admin-system.dir\src
 
+build CMakeFiles/edu-admin-system.dir/src/examManagement.cpp.obj: CXX_COMPILER__edu-admin-system_unscanned_Debug F$:/JetBrains/edu-admin-system/src/examManagement.cpp || cmake_object_order_depends_target_edu-admin-system
+  DEP_FILE = CMakeFiles\edu-admin-system.dir\src\examManagement.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IF:/JetBrains/edu-admin-system/./easyx/include -IF:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/include -IF:/JetBrains/edu-admin-system/libpqxx/include
+  OBJECT_DIR = CMakeFiles\edu-admin-system.dir
+  OBJECT_FILE_DIR = CMakeFiles\edu-admin-system.dir\src
+
 build CMakeFiles/edu-admin-system.dir/src/graphFunctions.cpp.obj: CXX_COMPILER__edu-admin-system_unscanned_Debug F$:/JetBrains/edu-admin-system/src/graphFunctions.cpp || cmake_object_order_depends_target_edu-admin-system
   DEP_FILE = CMakeFiles\edu-admin-system.dir\src\graphFunctions.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
@@ -99,7 +106,7 @@ build CMakeFiles/edu-admin-system.dir/src/userManagement.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable edu-admin-system.exe
 
-build edu-admin-system.exe: CXX_EXECUTABLE_LINKER__edu-admin-system_Debug CMakeFiles/edu-admin-system.dir/src/announceManagement.cpp.obj CMakeFiles/edu-admin-system.dir/src/graphFunctions.cpp.obj CMakeFiles/edu-admin-system.dir/src/main.cpp.obj CMakeFiles/edu-admin-system.dir/src/studentManagement.cpp.obj CMakeFiles/edu-admin-system.dir/src/teacherManagement.cpp.obj CMakeFiles/edu-admin-system.dir/src/userManagement.cpp.obj | build-libpqxx/src/libpqxx.a C$:/Program$ Files/PostgreSQL/17/lib/libpq.lib || build-libpqxx/src/libpqxx.a
+build edu-admin-system.exe: CXX_EXECUTABLE_LINKER__edu-admin-system_Debug CMakeFiles/edu-admin-system.dir/src/announceManagement.cpp.obj CMakeFiles/edu-admin-system.dir/src/examManagement.cpp.obj CMakeFiles/edu-admin-system.dir/src/graphFunctions.cpp.obj CMakeFiles/edu-admin-system.dir/src/main.cpp.obj CMakeFiles/edu-admin-system.dir/src/studentManagement.cpp.obj CMakeFiles/edu-admin-system.dir/src/teacherManagement.cpp.obj CMakeFiles/edu-admin-system.dir/src/userManagement.cpp.obj | build-libpqxx/src/libpqxx.a C$:/Program$ Files/PostgreSQL/17/lib/libpq.lib || build-libpqxx/src/libpqxx.a
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-Bstatic  -leasyx  build-libpqxx/src/libpqxx.a  -leasyx  -Wl,-Bdynamic  "C:/Program Files/PostgreSQL/17/lib/libpq.lib"  -lwsock32  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LF:/JetBrains/edu-admin-system/./easyx/lib64

@@ -3,7 +3,6 @@
 //
 
 #include "ustil.h"
-#include "userManagement.h"
 
 void UserManagementGraph(pqxx::connection& conn){
     Menu(3);

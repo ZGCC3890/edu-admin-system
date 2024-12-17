@@ -2,7 +2,6 @@
 // Created by ZGCC on 24-12-16.
 //
 #include "ustil.h"
-#include "studentManagement.h"
 
 int availableCourseCurPage = 0;
 int selectedCourseCurPage = 0;

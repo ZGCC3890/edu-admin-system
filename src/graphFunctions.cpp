@@ -2,7 +2,6 @@
 // Created by ZGCC on 24-12-16.
 //
 #include "ustil.h"
-#include "graphFunctions.h"
 
 void fillroundrect_(object x){
     fillroundrect(x.posx, x.posy, x.posx + x.width, x.posy + x.height, 10, 10);

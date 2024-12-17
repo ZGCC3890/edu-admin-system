@@ -13,6 +13,7 @@
 #include "teacherManagement.h"
 #include "announceManagement.h"
 #include "userManagement.h"
+#include "examManagement.h"
 
 #define CommonBlue RGB(50, 100, 200)
 #define LightBlue RGB(70, 120, 210)
