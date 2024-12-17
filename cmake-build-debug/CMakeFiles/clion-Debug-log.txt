@@ -16,6 +16,6 @@
 -- Looking for poll - not found
 -- Generating config.h
 -- Generating config.h - done
--- Configuring done (41.4s)
+-- Configuring done (43.7s)
 -- Generating done (0.0s)
 -- Build files have been written to: F:/JetBrains/edu-admin-system/cmake-build-debug

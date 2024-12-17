@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yk1tn4"
-      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yk1tn4"
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9i48b8"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9i48b8"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,10 +71,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yk1tn4'
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9i48b8'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_38a2c
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj -c "D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c"
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_ffe0d
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj -c "D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe
         Target: x86_64-w64-mingw32
@@ -82,8 +82,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_38a2c.dir/'
-         D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_38a2c.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccEi7iXy.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ffe0d.dir/'
+         D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ffe0d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccNHf2zC.s
         GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -101,13 +101,13 @@ events:
          D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_38a2c.dir/'
-         as -v -o CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccEi7iXy.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ffe0d.dir/'
+         as -v -o CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccNHf2zC.s
         GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
         COMPILER_PATH=D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.'
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe"  -v CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj -o cmTC_38a2c.exe -Wl,--out-implib,libcmTC_38a2c.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe"  -v CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj -o cmTC_ffe0d.exe -Wl,--out-implib,libcmTC_ffe0d.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
         COLLECT_GCC=D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=D:/Jetbrain/CLion\\ 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
@@ -118,9 +118,9 @@ events:
         gcc version 13.1.0 (GCC) 
         COMPILER_PATH=D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_38a2c.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_38a2c.'
-         D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_38a2c.exe D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_38a2c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_38a2c.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_38a2c.'\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ffe0d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ffe0d.'
+         D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_ffe0d.exe D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_ffe0d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ffe0d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ffe0d.'\x0d
         
       exitCode: 0
   -
@@ -154,10 +154,10 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yk1tn4']
+        ignore line: [Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9i48b8']
         ignore line: []
-        ignore line: [Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_38a2c]
-        ignore line: [[1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj -c "D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_ffe0d]
+        ignore line: [[1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj -c "D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -165,8 +165,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_38a2c.dir/']
-        ignore line: [ D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_38a2c.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccEi7iXy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ffe0d.dir/']
+        ignore line: [ D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ffe0d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccNHf2zC.s]
         ignore line: [GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -184,8 +184,8 @@ events:
         ignore line: [ D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_38a2c.dir/']
-        ignore line: [ as -v -o CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccEi7iXy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ffe0d.dir/']
+        ignore line: [ as -v -o CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccNHf2zC.s]
         ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
         ignore line: [COMPILER_PATH=D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/]
@@ -195,8 +195,8 @@ events:
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe"  -v CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj -o cmTC_38a2c.exe -Wl --out-implib libcmTC_38a2c.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe"  -v CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj -o cmTC_ffe0d.exe -Wl --out-implib libcmTC_ffe0d.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=D:/Jetbrain/CLion\\ 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
@@ -213,9 +213,9 @@ events:
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_38a2c.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_38a2c.']
-        ignore line: [ D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_38a2c.exe D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_38a2c.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_38a2c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_38a2c.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_38a2c.'\x0d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ffe0d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ffe0d.']
+        ignore line: [ D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_ffe0d.exe D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_ffe0d.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_ffe0d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ffe0d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ffe0d.'\x0d]
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -233,8 +233,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nqguww"
-      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nqguww"
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wkjb21"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wkjb21"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -243,10 +243,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nqguww'
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wkjb21'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_a4c02
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj -c "D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_62347
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj -c "D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe
         Target: x86_64-w64-mingw32
@@ -254,8 +254,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a4c02.dir/'
-         D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a4c02.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\ZGCC\\AppData\\Local\\Temp\\cc4Qcg1X.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_62347.dir/'
+         D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_62347.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccO2KGfb.s
         GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -279,13 +279,13 @@ events:
          D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: e75de627edc3c57e31324b930b15b056
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a4c02.dir/'
-         as -v -o CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\ZGCC\\AppData\\Local\\Temp\\cc4Qcg1X.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_62347.dir/'
+         as -v -o CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccO2KGfb.s
         GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
         COMPILER_PATH=D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../\x0d
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.'\x0d
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"  -v CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_a4c02.exe -Wl,--out-implib,libcmTC_a4c02.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.'\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"  -v CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_62347.exe -Wl,--out-implib,libcmTC_62347.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
         COLLECT_GCC=D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe
         COLLECT_LTO_WRAPPER=D:/Jetbrain/CLion\\ 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
@@ -296,9 +296,9 @@ events:
         gcc version 13.1.0 (GCC) 
         COMPILER_PATH=D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a4c02.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_a4c02.'
-         D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_a4c02.exe D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_a4c02.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a4c02.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_a4c02.'\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_62347.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_62347.'
+         D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_62347.exe D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_62347.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_62347.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_62347.'\x0d
         
       exitCode: 0
   -
@@ -338,10 +338,10 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nqguww']
+        ignore line: [Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wkjb21']
         ignore line: []
-        ignore line: [Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_a4c02]
-        ignore line: [[1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj -c "D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_62347]
+        ignore line: [[1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj -c "D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -349,8 +349,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a4c02.dir/']
-        ignore line: [ D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a4c02.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\ZGCC\\AppData\\Local\\Temp\\cc4Qcg1X.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_62347.dir/']
+        ignore line: [ D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT D:/Jetbrain/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_62347.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccO2KGfb.s]
         ignore line: [GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -374,8 +374,8 @@ events:
         ignore line: [ D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e75de627edc3c57e31324b930b15b056]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a4c02.dir/']
-        ignore line: [ as -v -o CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\ZGCC\\AppData\\Local\\Temp\\cc4Qcg1X.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_62347.dir/']
+        ignore line: [ as -v -o CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\ZGCC\\AppData\\Local\\Temp\\ccO2KGfb.s]
         ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
         ignore line: [COMPILER_PATH=D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/]
@@ -385,8 +385,8 @@ events:
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../\x0d]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.'\x0d]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"  -v CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_a4c02.exe -Wl --out-implib libcmTC_a4c02.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.'\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"  -v CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_62347.exe -Wl --out-implib libcmTC_62347.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=D:/Jetbrain/CLion\\ 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
@@ -403,9 +403,9 @@ events:
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a4c02.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_a4c02.']
-        ignore line: [ D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_a4c02.exe D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_a4c02.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_a4c02.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a4c02.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_a4c02.'\x0d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_62347.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_62347.']
+        ignore line: [ D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_62347.exe D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. CMakeFiles/cmTC_62347.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_62347.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/Jetbrain/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o\x0d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_62347.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_62347.'\x0d]
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -423,8 +423,8 @@ events:
     checks:
       - "Looking for poll"
     directories:
-      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1ssz65"
-      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1ssz65"
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-k479co"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-k479co"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -434,14 +434,14 @@ events:
       variable: "PQXX_HAVE_POLL"
       cached: true
       stdout: |
-        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1ssz65'
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-k479co'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_ae7e0
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe"   -DCHECK_FUNCTION_EXISTS=poll -fdiagnostics-color=always -o CMakeFiles/cmTC_ae7e0.dir/CheckFunctionExists.c.obj -c F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1ssz65/CheckFunctionExists.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe" -DCHECK_FUNCTION_EXISTS=poll  CMakeFiles/cmTC_ae7e0.dir/CheckFunctionExists.c.obj -o cmTC_ae7e0.exe -Wl,--out-implib,libcmTC_ae7e0.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        FAILED: cmTC_ae7e0.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe" -DCHECK_FUNCTION_EXISTS=poll  CMakeFiles/cmTC_ae7e0.dir/CheckFunctionExists.c.obj -o cmTC_ae7e0.exe -Wl,--out-implib,libcmTC_ae7e0.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin/ld.exe: CMakeFiles/cmTC_ae7e0.dir/CheckFunctionExists.c.obj:CheckFunctionExists.c:(.text+0x15): undefined reference to `poll'\x0d
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_71543
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe"   -DCHECK_FUNCTION_EXISTS=poll -fdiagnostics-color=always -o CMakeFiles/cmTC_71543.dir/CheckFunctionExists.c.obj -c F:/JetBrains/edu-admin-system/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-k479co/CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe" -DCHECK_FUNCTION_EXISTS=poll  CMakeFiles/cmTC_71543.dir/CheckFunctionExists.c.obj -o cmTC_71543.exe -Wl,--out-implib,libcmTC_71543.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_71543.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\gcc.exe" -DCHECK_FUNCTION_EXISTS=poll  CMakeFiles/cmTC_71543.dir/CheckFunctionExists.c.obj -o cmTC_71543.exe -Wl,--out-implib,libcmTC_71543.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin/ld.exe: CMakeFiles/cmTC_71543.dir/CheckFunctionExists.c.obj:CheckFunctionExists.c:(.text+0x15): undefined reference to `poll'\x0d
         collect2.exe: error: ld returned 1 exit status
         ninja: build stopped: subcommand failed.
         
@@ -466,9 +466,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_5de6c
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_5de6c.dir/PQXX_HAVE_CHARCONV_FLOAT.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CHARCONV_FLOAT.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_5de6c.dir/PQXX_HAVE_CHARCONV_FLOAT.cxx.obj -o cmTC_5de6c.exe -Wl,--out-implib,libcmTC_5de6c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_58aa5
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_58aa5.dir/PQXX_HAVE_CHARCONV_FLOAT.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CHARCONV_FLOAT.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_58aa5.dir/PQXX_HAVE_CHARCONV_FLOAT.cxx.obj -o cmTC_58aa5.exe -Wl,--out-implib,libcmTC_58aa5.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -491,9 +491,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_0fe7a
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_0fe7a.dir/PQXX_HAVE_CHARCONV_INT.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CHARCONV_INT.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_0fe7a.dir/PQXX_HAVE_CHARCONV_INT.cxx.obj -o cmTC_0fe7a.exe -Wl,--out-implib,libcmTC_0fe7a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_40fd4
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_40fd4.dir/PQXX_HAVE_CHARCONV_INT.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CHARCONV_INT.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_40fd4.dir/PQXX_HAVE_CHARCONV_INT.cxx.obj -o cmTC_40fd4.exe -Wl,--out-implib,libcmTC_40fd4.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -516,9 +516,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_f5990
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_f5990.dir/PQXX_HAVE_CMP.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CMP.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_f5990.dir/PQXX_HAVE_CMP.cxx.obj -o cmTC_f5990.exe -Wl,--out-implib,libcmTC_f5990.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_04fb1
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_04fb1.dir/PQXX_HAVE_CMP.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CMP.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_04fb1.dir/PQXX_HAVE_CMP.cxx.obj -o cmTC_04fb1.exe -Wl,--out-implib,libcmTC_04fb1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -541,9 +541,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_a0492
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_a0492.dir/PQXX_HAVE_CONCEPTS.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CONCEPTS.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_a0492.dir/PQXX_HAVE_CONCEPTS.cxx.obj -o cmTC_a0492.exe -Wl,--out-implib,libcmTC_a0492.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_7b260
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_7b260.dir/PQXX_HAVE_CONCEPTS.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CONCEPTS.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_7b260.dir/PQXX_HAVE_CONCEPTS.cxx.obj -o cmTC_7b260.exe -Wl,--out-implib,libcmTC_7b260.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -566,9 +566,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_91934
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_91934.dir/PQXX_HAVE_CXA_DEMANGLE.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CXA_DEMANGLE.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_91934.dir/PQXX_HAVE_CXA_DEMANGLE.cxx.obj -o cmTC_91934.exe -Wl,--out-implib,libcmTC_91934.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_ede97
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_ede97.dir/PQXX_HAVE_CXA_DEMANGLE.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CXA_DEMANGLE.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_ede97.dir/PQXX_HAVE_CXA_DEMANGLE.cxx.obj -o cmTC_ede97.exe -Wl,--out-implib,libcmTC_ede97.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -591,9 +591,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_a59ab
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_a59ab.dir/PQXX_HAVE_GCC_PURE.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_GCC_PURE.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_a59ab.dir/PQXX_HAVE_GCC_PURE.cxx.obj -o cmTC_a59ab.exe -Wl,--out-implib,libcmTC_a59ab.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_ec74e
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_ec74e.dir/PQXX_HAVE_GCC_PURE.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_GCC_PURE.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_ec74e.dir/PQXX_HAVE_GCC_PURE.cxx.obj -o cmTC_ec74e.exe -Wl,--out-implib,libcmTC_ec74e.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -616,9 +616,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_edd10
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_edd10.dir/PQXX_HAVE_GCC_VISIBILITY.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_GCC_VISIBILITY.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_edd10.dir/PQXX_HAVE_GCC_VISIBILITY.cxx.obj -o cmTC_edd10.exe -Wl,--out-implib,libcmTC_edd10.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_47224
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_47224.dir/PQXX_HAVE_GCC_VISIBILITY.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_GCC_VISIBILITY.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_47224.dir/PQXX_HAVE_GCC_VISIBILITY.cxx.obj -o cmTC_47224.exe -Wl,--out-implib,libcmTC_47224.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -641,9 +641,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_ac7cb
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_ac7cb.dir/PQXX_HAVE_LIKELY.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_LIKELY.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_ac7cb.dir/PQXX_HAVE_LIKELY.cxx.obj -o cmTC_ac7cb.exe -Wl,--out-implib,libcmTC_ac7cb.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_37faa
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_37faa.dir/PQXX_HAVE_LIKELY.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_LIKELY.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_37faa.dir/PQXX_HAVE_LIKELY.cxx.obj -o cmTC_37faa.exe -Wl,--out-implib,libcmTC_37faa.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -666,10 +666,10 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_1affe
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_1affe.dir/PQXX_HAVE_MULTIDIM.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_MULTIDIM.cxx
-        FAILED: CMakeFiles/cmTC_1affe.dir/PQXX_HAVE_MULTIDIM.cxx.obj 
-        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_1affe.dir/PQXX_HAVE_MULTIDIM.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_MULTIDIM.cxx
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_17422
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_17422.dir/PQXX_HAVE_MULTIDIM.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_MULTIDIM.cxx
+        FAILED: CMakeFiles/cmTC_17422.dir/PQXX_HAVE_MULTIDIM.cxx.obj 
+        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_17422.dir/PQXX_HAVE_MULTIDIM.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_MULTIDIM.cxx
         F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_MULTIDIM.cxx:5:4: error: #error "No PQXX_HAVE_MULTIDIM: __cpp_multidimensional_subscript is not set."
             5 | #  error "No PQXX_HAVE_MULTIDIM: __cpp_multidimensional_subscript is not set."
               |    ^~~~~
@@ -699,9 +699,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_843f5
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_843f5.dir/PQXX_HAVE_PATH.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_PATH.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_843f5.dir/PQXX_HAVE_PATH.cxx.obj -o cmTC_843f5.exe -Wl,--out-implib,libcmTC_843f5.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_545bc
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_545bc.dir/PQXX_HAVE_PATH.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_PATH.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_545bc.dir/PQXX_HAVE_PATH.cxx.obj -o cmTC_545bc.exe -Wl,--out-implib,libcmTC_545bc.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -724,10 +724,10 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_e5b42
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_e5b42.dir/PQXX_HAVE_POLL.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_POLL.cxx
-        FAILED: CMakeFiles/cmTC_e5b42.dir/PQXX_HAVE_POLL.cxx.obj 
-        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_e5b42.dir/PQXX_HAVE_POLL.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_POLL.cxx
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_6c465
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_6c465.dir/PQXX_HAVE_POLL.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_POLL.cxx
+        FAILED: CMakeFiles/cmTC_6c465.dir/PQXX_HAVE_POLL.cxx.obj 
+        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_6c465.dir/PQXX_HAVE_POLL.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_POLL.cxx
         F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_POLL.cxx:2:10: fatal error: poll.h: No such file or directory
             2 | #include <poll.h>
               |          ^~~~~~~~
@@ -755,9 +755,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_95625
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_95625.dir/PQXX_HAVE_SLEEP_FOR.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SLEEP_FOR.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_95625.dir/PQXX_HAVE_SLEEP_FOR.cxx.obj -o cmTC_95625.exe -Wl,--out-implib,libcmTC_95625.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_6be32
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_6be32.dir/PQXX_HAVE_SLEEP_FOR.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SLEEP_FOR.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_6be32.dir/PQXX_HAVE_SLEEP_FOR.cxx.obj -o cmTC_6be32.exe -Wl,--out-implib,libcmTC_6be32.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -780,9 +780,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_5cb9b
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_5cb9b.dir/PQXX_HAVE_SOURCE_LOCATION.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SOURCE_LOCATION.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_5cb9b.dir/PQXX_HAVE_SOURCE_LOCATION.cxx.obj -o cmTC_5cb9b.exe -Wl,--out-implib,libcmTC_5cb9b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_3dd8e
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_3dd8e.dir/PQXX_HAVE_SOURCE_LOCATION.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SOURCE_LOCATION.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_3dd8e.dir/PQXX_HAVE_SOURCE_LOCATION.cxx.obj -o cmTC_3dd8e.exe -Wl,--out-implib,libcmTC_3dd8e.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -805,9 +805,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_020f1
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_020f1.dir/PQXX_HAVE_SPAN.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SPAN.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_020f1.dir/PQXX_HAVE_SPAN.cxx.obj -o cmTC_020f1.exe -Wl,--out-implib,libcmTC_020f1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_6249c
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_6249c.dir/PQXX_HAVE_SPAN.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SPAN.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_6249c.dir/PQXX_HAVE_SPAN.cxx.obj -o cmTC_6249c.exe -Wl,--out-implib,libcmTC_6249c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -830,9 +830,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_c5334
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_c5334.dir/PQXX_HAVE_SSIZE.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SSIZE.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_c5334.dir/PQXX_HAVE_SSIZE.cxx.obj -o cmTC_c5334.exe -Wl,--out-implib,libcmTC_c5334.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_dd03c
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_dd03c.dir/PQXX_HAVE_SSIZE.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SSIZE.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_dd03c.dir/PQXX_HAVE_SSIZE.cxx.obj -o cmTC_dd03c.exe -Wl,--out-implib,libcmTC_dd03c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -855,10 +855,10 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_3d4b0
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_3d4b0.dir/PQXX_HAVE_STRERROR_R.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_R.cxx
-        FAILED: CMakeFiles/cmTC_3d4b0.dir/PQXX_HAVE_STRERROR_R.cxx.obj 
-        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_3d4b0.dir/PQXX_HAVE_STRERROR_R.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_R.cxx
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_443b3
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_443b3.dir/PQXX_HAVE_STRERROR_R.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_R.cxx
+        FAILED: CMakeFiles/cmTC_443b3.dir/PQXX_HAVE_STRERROR_R.cxx.obj 
+        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_443b3.dir/PQXX_HAVE_STRERROR_R.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_R.cxx
         F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_R.cxx: In function 'int main()':
         F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_R.cxx:11:12: error: 'strerror_r' was not declared in this scope; did you mean 'strerror_s'?
            11 |   auto res{strerror_r(1, buffer, 200)};
@@ -887,9 +887,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_be7f1
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_be7f1.dir/PQXX_HAVE_STRERROR_S.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_S.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_be7f1.dir/PQXX_HAVE_STRERROR_S.cxx.obj -o cmTC_be7f1.exe -Wl,--out-implib,libcmTC_be7f1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_4b5cf
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_4b5cf.dir/PQXX_HAVE_STRERROR_S.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_S.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_4b5cf.dir/PQXX_HAVE_STRERROR_S.cxx.obj -o cmTC_4b5cf.exe -Wl,--out-implib,libcmTC_4b5cf.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -912,9 +912,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_d05a9
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_d05a9.dir/PQXX_HAVE_THREAD_LOCAL.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_THREAD_LOCAL.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_d05a9.dir/PQXX_HAVE_THREAD_LOCAL.cxx.obj -o cmTC_d05a9.exe -Wl,--out-implib,libcmTC_d05a9.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_b7e99
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_b7e99.dir/PQXX_HAVE_THREAD_LOCAL.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_THREAD_LOCAL.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_b7e99.dir/PQXX_HAVE_THREAD_LOCAL.cxx.obj -o cmTC_b7e99.exe -Wl,--out-implib,libcmTC_b7e99.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -937,9 +937,9 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_eae54
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_eae54.dir/PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_YEAR_MONTH_DAY.cxx
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_eae54.dir/PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj -o cmTC_eae54.exe -Wl,--out-implib,libcmTC_eae54.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_f0695
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_f0695.dir/PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_YEAR_MONTH_DAY.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_f0695.dir/PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj -o cmTC_f0695.exe -Wl,--out-implib,libcmTC_f0695.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -962,10 +962,10 @@ events:
       stdout: |
         Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_4fdad
-        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_4fdad.dir/no_need_fslib.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/no_need_fslib.cxx
-        FAILED: CMakeFiles/cmTC_4fdad.dir/no_need_fslib.cxx.obj 
-        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_4fdad.dir/no_need_fslib.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/no_need_fslib.cxx
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_c325d
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_c325d.dir/no_need_fslib.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/no_need_fslib.cxx
+        FAILED: CMakeFiles/cmTC_c325d.dir/no_need_fslib.cxx.obj 
+        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_c325d.dir/no_need_fslib.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/no_need_fslib.cxx
         F:/JetBrains/edu-admin-system/libpqxx/config-tests/no_need_fslib.cxx: In function 'int main()':
         F:/JetBrains/edu-admin-system/libpqxx/config-tests/no_need_fslib.cxx:19:55: error: use of deleted function 'std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const wchar_t*) [with _Traits = char_traits<char>]'
            19 |   std::cout << std::filesystem::path{"foo.bar"}.c_str() << '\\n';
