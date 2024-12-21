@@ -24,6 +24,7 @@ enum class MENU{
     TEACHER_MGMT,
     ANNOUNCE_MGMT,
     USER_MGMT,
+    EXAM_MGMT,
     END
 };
 
