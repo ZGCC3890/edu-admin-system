@@ -1,5 +1,5 @@
 # edu-admin-system
-Introduction to Software Engineering Course Design
+一个小型教务系统demo
 ## 目录
 <ul>
   <li><a href = "#section1">连接配置</a></li>
