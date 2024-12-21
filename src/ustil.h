@@ -18,7 +18,7 @@
 #define CommonBlue RGB(50, 100, 200)
 #define LightBlue RGB(70, 120, 210)
 
-//界面枚举类
+// 界面枚举类
 enum class MENU{
     STUDENT_MGMT,
     TEACHER_MGMT,
@@ -28,34 +28,34 @@ enum class MENU{
     END
 };
 
-//鼠标信息结构体
+// 鼠标信息结构体
 extern ExMessage msg;
 
-//当前界面
+// 当前界面
 extern MENU curGraph;
 
-//sql查询结果
+// sql查询结果
 extern pqxx::result res;
 
-//读取config
+// 读取config
 std::string LoadConfig();
-//从config文件读取配置，建立连接
+// 从config文件读取配置，建立连接
 std::pair<std::string, std::string> EstablishConnection(const std::string& filename);
 
-//绘制菜单
+// 绘制菜单
 void Menu(int n);
-//菜单选择
+// 菜单选择
 MENU MenuChoose();
 
-//用户名及标志
+// 用户名及标志
 extern bool userName_;
 extern std::string s_userName;
-//用户密码及标志
+// 用户密码及标志
 extern bool userPassword_;
 extern std::string s_userPassword;
-//登录检查
+// 登录检查
 bool LoginCheck(const char* identity, pqxx::connection& conn);
-//登录界面
+// 登录界面
 std::string LoginGraph(const char* identity, pqxx::connection& conn);
 
 #endif //CPP_SE_USTIL_H

@@ -115,6 +115,28 @@ branch-feature：开发分支，随时推送
   </tr>
 
   <tr>
+    <td rowspan="5">teachers</td>
+    <td>teacher_id</td>
+    <td>VARCHAR(50)</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>VARCHAR(100)</td>
+  </tr>
+  <tr>
+    <td>faculty</td>
+    <td>VARCHAR(100)</td>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>VARCHAR(50)</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>VARCHAR(50)</td>
+  </tr>
+
+  <tr>
     <td rowspan="4">enrollments</td>
     <td>student_id</td>
     <td>VARCHAR(50)</td>

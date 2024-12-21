@@ -6,18 +6,18 @@ ExMessage msg;
 MENU curGraph = MENU::STUDENT_MGMT;
 
 int main() {
-    //建立连接
+    // 建立连接
     pair<string, string> con = EstablishConnection("../config.txt");
     pqxx::connection localConnection(con.first);
     pqxx::connection cloudConnection(con.second);
 
-    //初始化窗口
+    // 初始化窗口
     initgraph(1440, 864 | EX_SHOWCONSOLE);
     setbkcolor(WHITE);
     setbkmode(TRANSPARENT);
     cleardevice();
 
-    //绘制校徽
+    // 绘制校徽
     IMAGE ah;
     loadimage(&ah,R"(.\ahu.jpg)", 250, 80, false);
     putimage(1170, 20, &ah);

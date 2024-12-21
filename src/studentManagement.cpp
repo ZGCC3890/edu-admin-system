@@ -38,18 +38,18 @@ void StudentManagementGraph(pqxx::connection& conn) {
     DrawingFilter();
     while (true) {
         flushmessage(EM_MOUSE);
-        //菜单及按钮反馈
+        // 菜单及按钮反馈
         MenuAnimation(0);
         ButtonAnimation(msg, courseSearchButton, WHITE, CommonBlue);
         ButtonAnimation(msg, courseResetButton, WHITE, CommonBlue);
         ButtonAnimation(msg, courseIdInputBar, WHITE, CommonBlue);
         ButtonAnimation(msg, courseNameInputBar, WHITE, CommonBlue);
         ButtonAnimation(msg, courseTeacherNameInputBar, WHITE, CommonBlue);
-        //表格绘制
+        // 表格绘制
         DrawCoursesTable();
-        //翻页按钮绘制
+        // 翻页按钮绘制
         PageButtonDrawing();
-        //退课选课按钮反馈
+        // 退课选课按钮反馈
         for(int i = availableCourseCurPage * 10; i < std::min(availableCourseCurPage * 10 + 10, availableCourses.size()); ++i)
             if(availableCourses[i]["current_students"].as<int>() != availableCourses[i]["max_students"].as<int>())
                 ButtonAnimation(msg, selectButton[i % 10], WHITE, CommonBlue);
@@ -79,7 +79,7 @@ void StudentManagementGraph(pqxx::connection& conn) {
                         curGraph = MenuChoose();
                         return;
                     }
-                    //如果点击翻页按钮时有多页且当前页数合法,则更新当前页数并清空表格区域
+                    // 如果点击翻页按钮时有多页且当前页数合法,则更新当前页数并清空表格区域
                     if (showSCoursePageButton_ && isInside(msg, sCoursePageUpButton) && selectedCourseCurPage > 0) {
                         --selectedCourseCurPage;
                         setfillcolor(WHITE);
@@ -109,7 +109,7 @@ void StudentManagementGraph(pqxx::connection& conn) {
                         fillrectangle_({aCoursePageUpButton.posx + 51, aCoursePageUpButton.posy, 90, 30});
                     }
 
-                    //输入框
+                    // 输入框
                     setfillcolor(WHITE);
                     if (isInside(msg, courseIdInputBar)) {
                         fillroundrect_(courseIdInputBar);
@@ -167,7 +167,7 @@ void StudentManagementGraph(pqxx::connection& conn) {
                             txn.exec_params(insertSQL, s_studentId, availableCourses[i]["course_id"].as<std::string>().c_str());
                             txn.exec_params(updateCourseSQL, availableCourses[i]["course_id"].as<std::string>().c_str());
                             txn.commit();
-                            //重绘界面
+                            // 重绘界面
                             ClearWindow();
                             SearchLessonData(conn);
                         }
