@@ -3,7 +3,6 @@
 //
 
 #include "ustil.h"
-#include "teacherManagement.h"
 
 void TeacherManagementGraph(pqxx::connection& conn){
     Menu(1);

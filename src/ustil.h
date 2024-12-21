@@ -13,6 +13,7 @@
 #include "teacherManagement.h"
 #include "announceManagement.h"
 #include "userManagement.h"
+#include "examManagement.h"
 
 #define CommonBlue RGB(50, 100, 200)
 #define LightBlue RGB(70, 120, 210)
@@ -23,6 +24,7 @@ enum class MENU{
     TEACHER_MGMT,
     ANNOUNCE_MGMT,
     USER_MGMT,
+    EXAM_MGMT,
     END
 };
 

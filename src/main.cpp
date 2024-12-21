@@ -82,6 +82,9 @@ void Menu(int n) {
     if(n == 3)
         OutputText(25, 400, YELLOW, 20, 0, "用户管理模块", "宋体");
     else OutputText(25, 400, WHITE, 20, 0, "用户管理模块", "宋体");
+    if(n == 4)
+        OutputText(25, 500, YELLOW, 20, 0, "考试管理模块", "宋体");
+    else OutputText(25, 500, WHITE, 20, 0, "考试管理模块", "宋体");
     OutputText(65, 800, WHITE, 20, 0, "退出", "宋体");
 }
 
@@ -91,6 +94,7 @@ MENU MenuChoose() {
         else if(msg.y >= 160 && msg.y <= 260) return MENU::TEACHER_MGMT;
         else if(msg.y >= 260 && msg.y <= 360) return MENU::ANNOUNCE_MGMT;
         else if(msg.y >= 360 && msg.y <= 460) return MENU::USER_MGMT;
+        else if(msg.y >= 460 && msg.y <= 560) return MENU::EXAM_MGMT;
         else if(msg.y >= 760 && msg.y <= 860) return MENU::END;
     }
     return curGraph;
