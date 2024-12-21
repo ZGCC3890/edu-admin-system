@@ -2,7 +2,6 @@
 // Created by ZGCC on 24-12-16.
 //
 #include "ustil.h"
-#include "studentManagement.h"
 
 int availableCourseCurPage = 0;
 int selectedCourseCurPage = 0;
@@ -39,20 +38,21 @@ void StudentManagementGraph(pqxx::connection& conn) {
     DrawingFilter();
     while (true) {
         flushmessage(EM_MOUSE);
-        //菜单及按钮反馈
+        // 菜单及按钮反馈
         MenuAnimation(0);
         ButtonAnimation(msg, courseSearchButton, WHITE, CommonBlue);
         ButtonAnimation(msg, courseResetButton, WHITE, CommonBlue);
         ButtonAnimation(msg, courseIdInputBar, WHITE, CommonBlue);
         ButtonAnimation(msg, courseNameInputBar, WHITE, CommonBlue);
         ButtonAnimation(msg, courseTeacherNameInputBar, WHITE, CommonBlue);
-        //表格绘制
+        // 表格绘制
         DrawCoursesTable();
-        //翻页按钮绘制
+        // 翻页按钮绘制
         PageButtonDrawing();
-        //退课选课按钮反馈
+        // 退课选课按钮反馈
         for(int i = availableCourseCurPage * 10; i < std::min(availableCourseCurPage * 10 + 10, availableCourses.size()); ++i)
-            ButtonAnimation(msg, selectButton[i%10], WHITE, CommonBlue);
+            if(availableCourses[i]["current_students"].as<int>() != availableCourses[i]["max_students"].as<int>())
+                ButtonAnimation(msg, selectButton[i % 10], WHITE, CommonBlue);
         for(int i = selectedCourseCurPage * 5; i < std::min(selectedCourseCurPage * 5 + 5, selectedCourses.size()); ++i)
             ButtonAnimation(msg, dropButton[i%5], WHITE, CommonBlue);
 
@@ -79,7 +79,7 @@ void StudentManagementGraph(pqxx::connection& conn) {
                         curGraph = MenuChoose();
                         return;
                     }
-                    //如果点击翻页按钮时有多页且当前页数合法,则更新当前页数并清空表格区域
+                    // 如果点击翻页按钮时有多页且当前页数合法,则更新当前页数并清空表格区域
                     if (showSCoursePageButton_ && isInside(msg, sCoursePageUpButton) && selectedCourseCurPage > 0) {
                         --selectedCourseCurPage;
                         setfillcolor(WHITE);
@@ -109,7 +109,7 @@ void StudentManagementGraph(pqxx::connection& conn) {
                         fillrectangle_({aCoursePageUpButton.posx + 51, aCoursePageUpButton.posy, 90, 30});
                     }
 
-                    //输入框
+                    // 输入框
                     setfillcolor(WHITE);
                     if (isInside(msg, courseIdInputBar)) {
                         fillroundrect_(courseIdInputBar);
@@ -157,10 +157,17 @@ void StudentManagementGraph(pqxx::connection& conn) {
                                 INSERT INTO enrollments (student_id, course_id, operation)
                                 VALUES ($1, $2, 'select')
                                 )";
+                            // 更新选课课程的人数
+                            std::string updateCourseSQL = R"(
+                                UPDATE courses
+                                SET current_students = current_students + 1
+                                WHERE course_id = $1
+                                )";
 
                             txn.exec_params(insertSQL, s_studentId, availableCourses[i]["course_id"].as<std::string>().c_str());
+                            txn.exec_params(updateCourseSQL, availableCourses[i]["course_id"].as<std::string>().c_str());
                             txn.commit();
-                            //重绘界面
+                            // 重绘界面
                             ClearWindow();
                             SearchLessonData(conn);
                         }
@@ -174,8 +181,14 @@ void StudentManagementGraph(pqxx::connection& conn) {
                                 INSERT INTO enrollments (student_id, course_id, operation)
                                 VALUES ($1, $2, 'drop')
                                 )";
+                            std::string updateCourseSQL = R"(
+                                UPDATE courses
+                                SET current_students = current_students - 1
+                                WHERE course_id = $1
+                                )";
 
                             txn.exec_params(insertSQL, s_studentId, selectedCourses[i]["course_id"].as<std::string>().c_str());
+                            txn.exec_params(updateCourseSQL, selectedCourses[i]["course_id"].as<std::string>().c_str());
                             txn.commit();
                             //重绘界面
                             ClearWindow();
@@ -249,6 +262,7 @@ void DrawCoursesTable(){
     OutputText(930 + 10, 410, BLACK, 20, 0, "上课时间", "宋体");
     OutputText(1150 + 10,410, BLACK, 20, 0, "上课教室", "宋体");
     for (int i = availableCourseCurPage * 10; i < std::min(availableCourseCurPage * 10 + 10, availableCourses.size()); ++i) {
+        //可选课程数据
         setlinecolor(BLACK);
         rectangle_({220, 435 + (i % 10) * 30, 140, 30});
         rectangle_({360, 435 + (i % 10) * 30, 310, 30});
@@ -260,11 +274,17 @@ void DrawCoursesTable(){
         OutputText(670 + 10, 435 + 5 + (i % 10) * 30, BLACK, 20, 0, availableCourses[i]["teacher_name"].as<std::string>().c_str(), "宋体");
         OutputText(930 + 10, 435 + 5 + (i % 10) * 30, BLACK, 20, 0, availableCourses[i]["schedule"].as<std::string>().c_str(), "宋体");
         OutputText(1150 + 10,435 + 5 + (i % 10) * 30, BLACK, 20, 0, availableCourses[i]["classroom"].as<std::string>().c_str(), "宋体");
-        selectButton[i % 10] = {1330, 437 + (i % 10) * 30, 80, 25};
-        setfillcolor(CommonBlue);
-        setlinecolor(CommonBlue);
-        fillroundrect_(selectButton[i % 10]);
-        OutputText(1330 + 20, 440 + (i % 10) * 30, WHITE, 20, 0, "选课", "宋体");
+        //选课按钮
+        if(availableCourses[i]["current_students"].as<int>() != availableCourses[i]["max_students"].as<int>()) {
+            selectButton[i % 10] = {1330, 437 + (i % 10) * 30, 80, 25};
+            setfillcolor(CommonBlue);
+            setlinecolor(CommonBlue);
+            fillroundrect_(selectButton[i % 10]);
+            OutputText(1330 + 20, 440 + (i % 10) * 30, WHITE, 20, 0, "选课", "宋体");
+        }
+        //上课人数
+        OutputText(1255, 435 + 10 + (i % 10) * 30, BLACK, 15, 0, availableCourses[i]["current_students"].as<std::string>().c_str(), "宋体");
+        OutputText(1275, 435 + 10 + (i % 10) * 30, BLACK, 15, 0, ("| " + availableCourses[i]["max_students"].as<std::string>()).c_str(), "宋体");
     }
 }
 
@@ -305,8 +325,8 @@ void SearchLessonData(pqxx::connection& conn){
                 )
             )";
     if (courseId_){
-        selectedCoursesSQL += "AND c.course_id = '" + s_courseId + "'";
-        availableCoursesSQL += "AND c.course_id = '" + s_courseId + "'";
+        selectedCoursesSQL += "AND c.course_id LIKE '%" + s_courseId + "%'";
+        availableCoursesSQL += "AND c.course_id LIKE '%" + s_courseId + "%'";
     }
     if (courseName_){
         selectedCoursesSQL += "AND c.course_name LIKE '%" + s_courseName + "%'";

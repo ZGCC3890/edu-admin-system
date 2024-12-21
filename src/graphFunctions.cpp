@@ -2,7 +2,6 @@
 // Created by ZGCC on 24-12-16.
 //
 #include "ustil.h"
-#include "graphFunctions.h"
 
 void fillroundrect_(object x){
     fillroundrect(x.posx, x.posy, x.posx + x.width, x.posy + x.height, 10, 10);
@@ -61,6 +60,9 @@ void MenuAnimation(int n){
         if(msg.y >= 360 && msg.y <= 460 || n == 3)
             OutputText(25, 400, YELLOW, 20, 0, "用户管理模块", "宋体");
         else OutputText(25, 400, WHITE, 20, 0, "用户管理模块", "宋体");
+        if(msg.y >= 460 && msg.y <= 560 || n == 4)
+            OutputText(25, 500, YELLOW, 20, 0, "考试管理模块", "宋体");
+        else OutputText(25, 500, WHITE, 20, 0, "考试管理模块", "宋体");
         if(msg.y >= 760 && msg.y <= 860)
             OutputText(65, 800, YELLOW, 20, 0, "退出", "宋体");
         else OutputText(65, 800, WHITE, 20, 0, "退出", "宋体");

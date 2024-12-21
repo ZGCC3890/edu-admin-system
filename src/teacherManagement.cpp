@@ -3,10 +3,14 @@
 //
 
 #include "ustil.h"
-#include "teacherManagement.h"
+
+std::string s_teacherId;
 
 void TeacherManagementGraph(pqxx::connection& conn){
+    s_teacherId = LoginGraph("teacher", conn);
+    if (s_teacherId == " ") return;
     Menu(1);
+    ClearWindow();
     while (true) {
         flushmessage(EM_MOUSE);
         MenuAnimation(1);

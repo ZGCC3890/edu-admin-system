@@ -6,18 +6,18 @@ ExMessage msg;
 MENU curGraph = MENU::STUDENT_MGMT;
 
 int main() {
-    //建立连接
+    // 建立连接
     pair<string, string> con = EstablishConnection("../config.txt");
     pqxx::connection localConnection(con.first);
     pqxx::connection cloudConnection(con.second);
 
-    //初始化窗口
+    // 初始化窗口
     initgraph(1440, 864 | EX_SHOWCONSOLE);
     setbkcolor(WHITE);
     setbkmode(TRANSPARENT);
     cleardevice();
 
-    //绘制校徽
+    // 绘制校徽
     IMAGE ah;
     loadimage(&ah,R"(.\ahu.jpg)", 250, 80, false);
     putimage(1170, 20, &ah);
@@ -82,6 +82,9 @@ void Menu(int n) {
     if(n == 3)
         OutputText(25, 400, YELLOW, 20, 0, "用户管理模块", "宋体");
     else OutputText(25, 400, WHITE, 20, 0, "用户管理模块", "宋体");
+    if(n == 4)
+        OutputText(25, 500, YELLOW, 20, 0, "考试管理模块", "宋体");
+    else OutputText(25, 500, WHITE, 20, 0, "考试管理模块", "宋体");
     OutputText(65, 800, WHITE, 20, 0, "退出", "宋体");
 }
 
@@ -91,6 +94,7 @@ MENU MenuChoose() {
         else if(msg.y >= 160 && msg.y <= 260) return MENU::TEACHER_MGMT;
         else if(msg.y >= 260 && msg.y <= 360) return MENU::ANNOUNCE_MGMT;
         else if(msg.y >= 360 && msg.y <= 460) return MENU::USER_MGMT;
+        else if(msg.y >= 460 && msg.y <= 560) return MENU::EXAM_MGMT;
         else if(msg.y >= 760 && msg.y <= 860) return MENU::END;
     }
     return curGraph;
@@ -115,7 +119,10 @@ bool LoginCheck(const char* identity, pqxx::connection& conn){
 }
 std::string LoginGraph(const char* identity, pqxx::connection& conn) {
     Menu(-2);
-
+    setfillcolor(WHITE);
+    setlinecolor(WHITE);
+    fillrectangle_({220, 0, 1440, 864});
+    ClearWindow();
     object userNameInputBar = {680, 300, 220, 40};
     object userPasswordInputBar = {680, 300 + 60, 220, 40};
     object loginButton = {730, 360 + 60, 120, 35};
