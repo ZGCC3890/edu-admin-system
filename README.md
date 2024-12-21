@@ -31,6 +31,9 @@ ustil.h 汇总头文件
 具体函数功能见头文件内注释
 
 ### <h3 id = "section3">运行环境</h3>
+#### 系统
+**Windows 10以上**  
+&nbsp;&nbsp;&nbsp;&nbsp;在win11上编写，但win10运行应该也可运行
 #### 图形库
 **easyx**  
 &nbsp;&nbsp;&nbsp;&nbsp;./easyx目录下自带

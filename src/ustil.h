@@ -56,6 +56,6 @@ extern std::string s_userPassword;
 // µÇÂ¼¼ì²é
 bool LoginCheck(const char* identity, pqxx::connection& conn);
 // µÇÂ¼½çÃæ
-std::string LoginGraph(const char* identity, pqxx::connection& conn);
+std::string LoginGraph(const char* identity, pqxx::connection& conn, int menu);
 
 #endif //CPP_SE_USTIL_H
