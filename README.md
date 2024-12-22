@@ -217,6 +217,32 @@ branch-feature：开发分支，随时推送
     <td>VARCHAR(100)</td>
     <td><a href="#dataNoteMajor">同students.major</a></td>
   </tr>
+  <tr>
+    <td rowspan="5">scores</td>
+    <td>student_id</td>
+    <td>VARCHAR(50)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>exam_name</td>
+    <td>VARCHAR(100)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>grade</td>
+    <td>NUMERIC(5,2)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>session</td>
+    <td>VARCHAR(20)</td>
+    <td>exp. 2024-1</td>
+  </tr>
+  <tr>
+    <td>teacher_id</td>
+    <td>VARCHAR(50)</td>
+    <td></td>
+  </tr>
 </table>
 
 #### 数据内容说明

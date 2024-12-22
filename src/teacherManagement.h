@@ -14,8 +14,12 @@ extern bool teacherProjectSearch_;
 extern bool examScoreInput_;
 // string
 extern std::string s_teacherId;
+extern std::string s_teacherName;
+extern pqxx::result lessonList;
 // 教师管理
 void TeacherManagementGraph(pqxx::connection& conn);
+// 获得教师名称和职称合成称呼
+std::string GetTeacherNameTitle(pqxx::connection& conn, std::string teacherId);
 // 教师课程查询
 void TeacherLessonSearch(pqxx::connection& conn);
 // 教师项目查询
