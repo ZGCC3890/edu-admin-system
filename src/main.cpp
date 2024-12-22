@@ -117,12 +117,12 @@ bool LoginCheck(const char* identity, pqxx::connection& conn){
     }
     return false;
 }
-std::string LoginGraph(const char* identity, pqxx::connection& conn) {
-    Menu(-2);
+std::string LoginGraph(const char* identity, pqxx::connection& conn, int menu) {
+    Menu(menu);
     setfillcolor(WHITE);
     setlinecolor(WHITE);
     fillrectangle_({220, 0, 1440, 864});
-    ClearWindow();
+    ClearWindow(0);
     object userNameInputBar = {680, 300, 220, 40};
     object userPasswordInputBar = {680, 300 + 60, 220, 40};
     object loginButton = {730, 360 + 60, 120, 35};
@@ -141,7 +141,7 @@ std::string LoginGraph(const char* identity, pqxx::connection& conn) {
 
         ButtonAnimation(msg, userNameInputBar, BLACK, LIGHTGRAY, 1);
         ButtonAnimation(msg, userPasswordInputBar, BLACK, LIGHTGRAY, 1);
-        ButtonAnimation(msg, loginButton, WHITE, CommonBlue);
+        ButtonAnimation(msg, loginButton);
 
         if(userName_) OutputText(userNameInputBar.posx + 10, userNameInputBar.posy + 10, BLACK, 22, 0, s_userName.c_str(), "宋体");
         else OutputText(userNameInputBar.posx + 10, userNameInputBar.posy + 8, RGB(150, 150, 150), 22, 0, "请输入用户id", "宋体");
@@ -155,6 +155,7 @@ std::string LoginGraph(const char* identity, pqxx::connection& conn) {
                     if (MenuChoose() != curGraph) {
                         curGraph = MenuChoose();
                         if(curGraph == MENU::END) return " ";
+                        return "GraphChanged";
                     }
                     if (isInside(msg, userNameInputBar)){
                         fillroundrect_(userNameInputBar);

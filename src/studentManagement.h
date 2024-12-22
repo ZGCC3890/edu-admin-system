@@ -5,7 +5,7 @@
 #ifndef CPP_SE_STUDENTMANAGEMENT_H
 #define CPP_SE_STUDENTMANAGEMENT_H
 
-// 按钮对象
+// 图形对象
 extern object selectButton[10];     // 选课按钮
 extern object dropButton[5];        // 退课按钮
 extern object sCoursePageUpButton;          // 已选课表上一页
