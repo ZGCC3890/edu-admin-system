@@ -59,7 +59,9 @@ void TeacherManagementGraph(pqxx::connection& conn){
 }
 
 void TeacherLessonSearch(pqxx::connection& conn) {
+    std::string selectedCoursesSQL = R"(
 
+    )";
 
     if (peekmessage(&msg, EM_MOUSE)) {
         switch (msg.message) {

@@ -75,6 +75,7 @@ branch-feature：开发分支，随时推送
     <th>表名</th>
     <th>列名</th>
     <th>数据类型</th>
+    <th>备注</th>
   </tr>
 
   <tr>
@@ -89,6 +90,7 @@ branch-feature：开发分支，随时推送
   <tr>
     <td>identity</td>
     <td>VARCHAR(20)</td>
+    <td>student / teacher / admin</td>
   </tr>
   <tr>
     <td>password</td>
@@ -111,10 +113,12 @@ branch-feature：开发分支，随时推送
   <tr>
     <td>grade</td>
     <td>INTEGER</td>
+    <td>exp. 2024</td>
   </tr>
   <tr>
     <td>class</td>
     <td>INTEGER</td>
+    <td>exp. 1</td>
   </tr>
 
   <tr>
@@ -129,6 +133,7 @@ branch-feature：开发分支，随时推送
   <tr>
     <td>faculty</td>
     <td>VARCHAR(100)</td>
+    <td><a href = "#dataNote">见附录.数据内容说明.faculty</a></td>
   </tr>
   <tr>
     <td>title</td>
@@ -190,4 +195,20 @@ branch-feature：开发分支，随时推送
     <td>major_restriction</td>
     <td>VARCHAR(100)</td>
   </tr>
+</table>
+
+#### 数据内容说明
+<table>
+  <tr>
+    <th>列名</th>
+    <th>可选内容</th>
+    <th>备注</th>
+  </tr>
+  <tr>
+    <td rowspan="4" id = "dataNote">faculty</td>
+    <td>Computer Science and Technology</td>
+  </tr>
+  <tr><td>Physics</td></tr>
+  <tr><td>Biology</td></tr>
+  <tr><td>Mathematics</td></tr>
 </table>
