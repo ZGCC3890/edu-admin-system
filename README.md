@@ -82,33 +82,39 @@ branch-feature：开发分支，随时推送
     <td rowspan="4">users</td>
     <td>user_id</td>
     <td>VARCHAR(50)</td>
+    <td></td>
   </tr>
   <tr>
     <td>name</td>
     <td>VARCHAR(100)</td>
+    <td></td>
   </tr>
   <tr>
     <td>identity</td>
     <td>VARCHAR(20)</td>
-    <td>student / teacher / admin</td>
+    <td><a href="#dataNoteIdentity">见数据内容说明.identity</a></td>
   </tr>
   <tr>
     <td>password</td>
     <td>VARCHAR(255)</td>
+    <td></td>
   </tr>
 
   <tr>
     <td rowspan="5">students</td>
     <td>student_id</td>
     <td>VARCHAR(50)</td>
+    <td></td>
   </tr>
   <tr>
     <td>name</td>
     <td>VARCHAR(100)</td>
+    <td></td>
   </tr>
   <tr>
     <td>major</td>
     <td>VARCHAR(100)</td>
+    <td><a href="#dataNoteMajor">见数据内容说明.major</a></td>
   </tr>
   <tr>
     <td>grade</td>
@@ -125,75 +131,91 @@ branch-feature：开发分支，随时推送
     <td rowspan="5">teachers</td>
     <td>teacher_id</td>
     <td>VARCHAR(50)</td>
+    <td></td>
   </tr>
   <tr>
     <td>name</td>
     <td>VARCHAR(100)</td>
+    <td>不带职称前缀</td>
   </tr>
   <tr>
     <td>faculty</td>
     <td>VARCHAR(100)</td>
-    <td><a href = "#dataNote">见附录.数据内容说明.faculty</a></td>
+    <td><a href = "#dataNoteFaculty">见数据内容说明.faculty</a></td>
   </tr>
   <tr>
     <td>title</td>
     <td>VARCHAR(50)</td>
+    <td><a href="#dataNoteTitle">见数据内容说明.title</a></td>
   </tr>
   <tr>
     <td>email</td>
     <td>VARCHAR(50)</td>
+    <td></td>
   </tr>
 
   <tr>
     <td rowspan="4">enrollments</td>
     <td>student_id</td>
     <td>VARCHAR(50)</td>
+    <td></td>
   </tr>
   <tr>
     <td>course_id</td>
     <td>VARCHAR(50)</td>
+    <td></td>
   </tr>
   <tr>
     <td>operation</td>
     <td>VARCHAR(20)</td>
+    <td><a href="#dataNoteOperation">见数据内容说明.operation</a></td>
   </tr>
   <tr>
     <td>enrollment_date</td>
     <td>TIMESTAMP</td>
+    <td></td>
   </tr>
 
   <tr>
     <td rowspan="8">courses</td>
     <td>courses_id</td>
     <td>VARCHAR(100)</td>
+    <td></td>
   </tr>
   <tr>
     <td>course_name</td>
     <td>VARCHAR(100)</td>
+    <td></td>
   </tr>
   <tr>
     <td>teacher_name</td>
     <td>VARCHAR(100)</td>
+    <td><a href="#dataNoteTitle">带职称前缀，见teachers.title</a></td>
   </tr>
   <tr>
     <td>schedule</td>
     <td>VARCHAR(100)</td>
+    <td></td>
   </tr>
   <tr>
     <td>current_students</td>
     <td>INTEGER</td>
+    <td></td>
   </tr>
   <tr>
     <td>max_students</td>
     <td>INTEGER</td>
+    <td></td>
   </tr>
   <tr>
     <td>classroom</td>
     <td>VARCHAR(50)</td>
+    <td>exp. Room B100</td>
   </tr>
   <tr>
     <td>major_restriction</td>
     <td>VARCHAR(100)</td>
+    <td><a href="#dataNoteMajor">同students.major</a></td>
   </tr>
 </table>
 
@@ -204,11 +226,40 @@ branch-feature：开发分支，随时推送
     <th>可选内容</th>
     <th>备注</th>
   </tr>
+
   <tr>
-    <td rowspan="4" id = "dataNote">faculty</td>
-    <td>Computer Science and Technology</td>
+    <td rowspan="3" id = "dataNoteIdentity">users.identity</td>
+    <td>student</td><td>学生</td>
   </tr>
-  <tr><td>Physics</td></tr>
-  <tr><td>Biology</td></tr>
-  <tr><td>Mathematics</td></tr>
+  <tr><td>teacher</td><td>教师</td></tr>
+  <tr><td>admin</td><td>管理员</td></tr>
+
+  <tr>
+    <td rowspan="4" id = "dataNoteMajor">students.major</td>
+    <td>Computer Science and Technology</td><td>计算机科学与技术</td>
+  </tr>
+  <tr><td>Physics</td><td>物理</td></tr>
+  <tr><td>Mathematics</td><td>数学</td></tr>
+  <tr><td>Biology</td><td>生物</td></tr>
+
+  <tr>
+    <td rowspan="4" id = "dataNoteFaculty">teachers.faculty</td>
+    <td>Computer Science and Technology</td><td>计算机科学与技术</td>
+  </tr>
+  <tr><td>Physics</td><td>物理</td></tr>
+  <tr><td>Biology</td><td>生物</td></tr>
+  <tr><td>Mathematics</td><td>数学</td></tr>
+
+  <tr>
+    <td rowspan="2" id = "dataNoteOperation">enrollments.operation</td>
+    <td>select</td><td>选课</td>
+  </tr>
+  <tr><td>drop</td><td>退课</td></tr>
+
+  <tr>
+    <td rowspan="3" id = "dataNoteTitle">teachers.title</td>
+    <td>professor</td><td>Prof.</td>
+  </tr>
+  <tr><td>doctor</td><td>Dr.</td></tr>
+  <tr><td>lecturer</td><td>无前缀</td></tr>
 </table>
