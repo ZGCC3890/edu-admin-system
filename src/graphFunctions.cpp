@@ -73,10 +73,10 @@ void InitMouseMsg() {
     msg.x = 0, msg.y = 0;
 }
 
-void ClearWindow(){
+void ClearWindow(int y, int x){
     setfillcolor(WHITE);
     setlinecolor(WHITE);
-    fillrectangle_({171, 96, 1440, 864});
+    fillrectangle_({x + 1, y - 1, 1440, 864});
     IMAGE ah;
     loadimage(&ah,R"(.\ahu.jpg)", 250, 80, false);
     putimage(1170, 20, &ah);

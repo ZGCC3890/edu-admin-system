@@ -6,18 +6,18 @@ ExMessage msg;
 MENU curGraph = MENU::STUDENT_MGMT;
 
 int main() {
-    //建立连接
+    // 建立连接
     pair<string, string> con = EstablishConnection("../config.txt");
     pqxx::connection localConnection(con.first);
     pqxx::connection cloudConnection(con.second);
 
-    //初始化窗口
+    // 初始化窗口
     initgraph(1440, 864 | EX_SHOWCONSOLE);
     setbkcolor(WHITE);
     setbkmode(TRANSPARENT);
     cleardevice();
 
-    //绘制校徽
+    // 绘制校徽
     IMAGE ah;
     loadimage(&ah,R"(.\ahu.jpg)", 250, 80, false);
     putimage(1170, 20, &ah);
@@ -117,12 +117,12 @@ bool LoginCheck(const char* identity, pqxx::connection& conn){
     }
     return false;
 }
-std::string LoginGraph(const char* identity, pqxx::connection& conn) {
-    Menu(-2);
+std::string LoginGraph(const char* identity, pqxx::connection& conn, int menu) {
+    Menu(menu);
     setfillcolor(WHITE);
     setlinecolor(WHITE);
     fillrectangle_({220, 0, 1440, 864});
-    ClearWindow();
+    ClearWindow(0);
     object userNameInputBar = {680, 300, 220, 40};
     object userPasswordInputBar = {680, 300 + 60, 220, 40};
     object loginButton = {730, 360 + 60, 120, 35};
@@ -141,7 +141,7 @@ std::string LoginGraph(const char* identity, pqxx::connection& conn) {
 
         ButtonAnimation(msg, userNameInputBar, BLACK, LIGHTGRAY, 1);
         ButtonAnimation(msg, userPasswordInputBar, BLACK, LIGHTGRAY, 1);
-        ButtonAnimation(msg, loginButton, WHITE, CommonBlue);
+        ButtonAnimation(msg, loginButton);
 
         if(userName_) OutputText(userNameInputBar.posx + 10, userNameInputBar.posy + 10, BLACK, 22, 0, s_userName.c_str(), "宋体");
         else OutputText(userNameInputBar.posx + 10, userNameInputBar.posy + 8, RGB(150, 150, 150), 22, 0, "请输入用户id", "宋体");
@@ -155,6 +155,7 @@ std::string LoginGraph(const char* identity, pqxx::connection& conn) {
                     if (MenuChoose() != curGraph) {
                         curGraph = MenuChoose();
                         if(curGraph == MENU::END) return " ";
+                        return "GraphChanged";
                     }
                     if (isInside(msg, userNameInputBar)){
                         fillroundrect_(userNameInputBar);

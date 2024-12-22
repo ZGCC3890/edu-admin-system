@@ -26,12 +26,12 @@ bool isInside(ExMessage m, object x);
 //输出函数封装（字体颜色，字号，字体，输出位置）
 void OutputText(int x, int y, COLORREF color, int nH, int nW, LPCTSTR str, LPCTSTR st);
 //按钮效果封装（默认线宽=2，类型为roundrect圆角矩形）
-void ButtonAnimation(ExMessage m, object x, COLORREF colorOn, COLORREF colorOff, int lineWidth = 2, std::string sort = "roundrect");
+void ButtonAnimation(ExMessage m, object x, COLORREF colorOn = WHITE, COLORREF colorOff = RGB(50, 100, 200), int lineWidth = 2, std::string sort = "roundrect");
 //菜单选中动画
 void MenuAnimation(int n);
 //重置鼠标
 void InitMouseMsg();
 //清空窗口内容
-void ClearWindow();
+void ClearWindow(int y, int x = 170);
 
 #endif //CPP_SE_GRAPHFUNCTIONS_H

@@ -30,31 +30,31 @@ std::string s_courseTeacherName;
 pqxx::result selectedCourses;
 pqxx::result availableCourses;
 void StudentManagementGraph(pqxx::connection& conn) {
-    s_studentId = LoginGraph("student", conn);
-    if (s_studentId == " ") return;
+    s_studentId = LoginGraph("student", conn, 0);
+    if (s_studentId == " " || s_studentId == "GraphChanged") return;
     Menu(0);
-    ClearWindow();
+    ClearWindow(95);
     SearchLessonData(conn);
     DrawingFilter();
     while (true) {
         flushmessage(EM_MOUSE);
-        //菜单及按钮反馈
+        // 菜单及按钮反馈
         MenuAnimation(0);
-        ButtonAnimation(msg, courseSearchButton, WHITE, CommonBlue);
-        ButtonAnimation(msg, courseResetButton, WHITE, CommonBlue);
-        ButtonAnimation(msg, courseIdInputBar, WHITE, CommonBlue);
-        ButtonAnimation(msg, courseNameInputBar, WHITE, CommonBlue);
-        ButtonAnimation(msg, courseTeacherNameInputBar, WHITE, CommonBlue);
-        //表格绘制
+        ButtonAnimation(msg, courseSearchButton);
+        ButtonAnimation(msg, courseResetButton);
+        ButtonAnimation(msg, courseIdInputBar);
+        ButtonAnimation(msg, courseNameInputBar);
+        ButtonAnimation(msg, courseTeacherNameInputBar);
+        // 表格绘制
         DrawCoursesTable();
-        //翻页按钮绘制
+        // 翻页按钮绘制
         PageButtonDrawing();
-        //退课选课按钮反馈
+        // 退课选课按钮反馈
         for(int i = availableCourseCurPage * 10; i < std::min(availableCourseCurPage * 10 + 10, availableCourses.size()); ++i)
             if(availableCourses[i]["current_students"].as<int>() != availableCourses[i]["max_students"].as<int>())
-                ButtonAnimation(msg, selectButton[i % 10], WHITE, CommonBlue);
+                ButtonAnimation(msg, selectButton[i % 10]);
         for(int i = selectedCourseCurPage * 5; i < std::min(selectedCourseCurPage * 5 + 5, selectedCourses.size()); ++i)
-            ButtonAnimation(msg, dropButton[i%5], WHITE, CommonBlue);
+            ButtonAnimation(msg, dropButton[i%5]);
 
         if (courseId_){
             OutputText(courseIdInputBar.posx + 10, courseIdInputBar.posy + 5, BLACK, 20, 0, s_courseId.c_str(), "宋体");
@@ -79,7 +79,7 @@ void StudentManagementGraph(pqxx::connection& conn) {
                         curGraph = MenuChoose();
                         return;
                     }
-                    //如果点击翻页按钮时有多页且当前页数合法,则更新当前页数并清空表格区域
+                    // 如果点击翻页按钮时有多页且当前页数合法,则更新当前页数并清空表格区域
                     if (showSCoursePageButton_ && isInside(msg, sCoursePageUpButton) && selectedCourseCurPage > 0) {
                         --selectedCourseCurPage;
                         setfillcolor(WHITE);
@@ -109,7 +109,7 @@ void StudentManagementGraph(pqxx::connection& conn) {
                         fillrectangle_({aCoursePageUpButton.posx + 51, aCoursePageUpButton.posy, 90, 30});
                     }
 
-                    //输入框
+                    // 输入框
                     setfillcolor(WHITE);
                     if (isInside(msg, courseIdInputBar)) {
                         fillroundrect_(courseIdInputBar);
@@ -135,7 +135,7 @@ void StudentManagementGraph(pqxx::connection& conn) {
 
                     if (isInside(msg, courseSearchButton)){
                         if(courseId_ || courseName_ || courseTeacherName_){
-                            ClearWindow();
+                            ClearWindow(95);
                             SearchLessonData(conn);
                         }
                     }
@@ -144,7 +144,7 @@ void StudentManagementGraph(pqxx::connection& conn) {
                         courseId_ = false;
                         courseName_ = false;
                         courseTeacherName_ = false;
-                        ClearWindow();
+                        ClearWindow(95);
                         SearchLessonData(conn);
                         DrawingFilter();
                     }
@@ -167,8 +167,8 @@ void StudentManagementGraph(pqxx::connection& conn) {
                             txn.exec_params(insertSQL, s_studentId, availableCourses[i]["course_id"].as<std::string>().c_str());
                             txn.exec_params(updateCourseSQL, availableCourses[i]["course_id"].as<std::string>().c_str());
                             txn.commit();
-                            //重绘界面
-                            ClearWindow();
+                            // 重绘界面
+                            ClearWindow(95);
                             SearchLessonData(conn);
                         }
                     }
@@ -191,7 +191,7 @@ void StudentManagementGraph(pqxx::connection& conn) {
                             txn.exec_params(updateCourseSQL, selectedCourses[i]["course_id"].as<std::string>().c_str());
                             txn.commit();
                             //重绘界面
-                            ClearWindow();
+                            ClearWindow(95);
                             SearchLessonData(conn);
                         }
                     }
