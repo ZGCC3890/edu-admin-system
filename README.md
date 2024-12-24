@@ -75,6 +75,7 @@ branch-feature：开发分支，随时推送
     <th>表名</th>
     <th>列名</th>
     <th>数据类型</th>
+    <th>用途</th>
     <th>备注</th>
   </tr>
 
@@ -82,21 +83,25 @@ branch-feature：开发分支，随时推送
     <td rowspan="4">users</td>
     <td>user_id</td>
     <td>VARCHAR(50)</td>
+    <td>用户id</td>
     <td></td>
   </tr>
   <tr>
     <td>name</td>
     <td>VARCHAR(100)</td>
+    <td>用户姓名</td>
     <td></td>
   </tr>
   <tr>
     <td>identity</td>
     <td>VARCHAR(20)</td>
+    <td>用户身份</td>
     <td><a href="#dataNoteIdentity">见数据内容说明.identity</a></td>
   </tr>
   <tr>
     <td>password</td>
     <td>VARCHAR(255)</td>
+    <td>用户密码</td>
     <td></td>
   </tr>
 
@@ -104,26 +109,31 @@ branch-feature：开发分支，随时推送
     <td rowspan="5">students</td>
     <td>student_id</td>
     <td>VARCHAR(50)</td>
+    <td>学生学号</td>
     <td></td>
   </tr>
   <tr>
     <td>name</td>
     <td>VARCHAR(100)</td>
+    <td>学生姓名</td>
     <td></td>
   </tr>
   <tr>
     <td>major</td>
     <td>VARCHAR(100)</td>
+    <td>学生专业</td>
     <td><a href="#dataNoteMajor">见数据内容说明.major</a></td>
   </tr>
   <tr>
     <td>grade</td>
     <td>INTEGER</td>
+    <td>学生年级</td>
     <td>exp. 2024</td>
   </tr>
   <tr>
     <td>class</td>
     <td>INTEGER</td>
+    <td>学生班级</td>
     <td>exp. 1</td>
   </tr>
 
@@ -131,26 +141,31 @@ branch-feature：开发分支，随时推送
     <td rowspan="5">teachers</td>
     <td>teacher_id</td>
     <td>VARCHAR(50)</td>
+    <td>教师教工号</td>
     <td></td>
   </tr>
   <tr>
     <td>name</td>
     <td>VARCHAR(100)</td>
+    <td>教师姓名</td>
     <td>不带职称前缀</td>
   </tr>
   <tr>
     <td>faculty</td>
     <td>VARCHAR(100)</td>
+    <td>教师院系</td>
     <td><a href = "#dataNoteFaculty">见数据内容说明.faculty</a></td>
   </tr>
   <tr>
     <td>title</td>
     <td>VARCHAR(50)</td>
+    <td>教师职称</td>
     <td><a href="#dataNoteTitle">见数据内容说明.title</a></td>
   </tr>
   <tr>
     <td>email</td>
     <td>VARCHAR(50)</td>
+    <td>电子邮件</td>
     <td></td>
   </tr>
 
@@ -158,21 +173,25 @@ branch-feature：开发分支，随时推送
     <td rowspan="4">enrollments</td>
     <td>student_id</td>
     <td>VARCHAR(50)</td>
+    <td>学生学号</td>
     <td></td>
   </tr>
   <tr>
     <td>course_id</td>
     <td>VARCHAR(50)</td>
+    <td>课程编号</td>
     <td></td>
   </tr>
   <tr>
     <td>operation</td>
     <td>VARCHAR(20)</td>
+    <td>操作</td>
     <td><a href="#dataNoteOperation">见数据内容说明.operation</a></td>
   </tr>
   <tr>
     <td>enrollment_date</td>
     <td>TIMESTAMP</td>
+    <td>操作时间</td>
     <td></td>
   </tr>
 
@@ -180,67 +199,138 @@ branch-feature：开发分支，随时推送
     <td rowspan="8">courses</td>
     <td>courses_id</td>
     <td>VARCHAR(100)</td>
+    <td>课程编号</td>
     <td></td>
   </tr>
   <tr>
     <td>course_name</td>
     <td>VARCHAR(100)</td>
+    <td>课程名称</td>
     <td></td>
   </tr>
   <tr>
     <td>teacher_name</td>
     <td>VARCHAR(100)</td>
+    <td>教师名称</td>
     <td><a href="#dataNoteTitle">带职称前缀，见teachers.title</a></td>
   </tr>
   <tr>
     <td>schedule</td>
     <td>VARCHAR(100)</td>
+    <td>上课时间</td>
     <td></td>
   </tr>
   <tr>
     <td>current_students</td>
     <td>INTEGER</td>
+    <td>当前选课人数</td>
     <td></td>
   </tr>
   <tr>
     <td>max_students</td>
     <td>INTEGER</td>
+    <td>选课人数上限</td>
     <td></td>
   </tr>
   <tr>
     <td>classroom</td>
     <td>VARCHAR(50)</td>
+    <td>上课教室</td>
     <td>exp. Room B100</td>
   </tr>
   <tr>
     <td>major_restriction</td>
     <td>VARCHAR(100)</td>
+    <td>专业限制</td>
     <td><a href="#dataNoteMajor">同students.major</a></td>
   </tr>
   <tr>
     <td rowspan="5">scores</td>
     <td>student_id</td>
     <td>VARCHAR(50)</td>
+    <td>学生学号</td>
     <td></td>
   </tr>
   <tr>
     <td>exam_name</td>
     <td>VARCHAR(100)</td>
+    <td>考试名称</td>
     <td></td>
   </tr>
   <tr>
     <td>grade</td>
     <td>NUMERIC(5,2)</td>
+    <td>考试分数</td>
     <td></td>
   </tr>
   <tr>
     <td>session</td>
     <td>VARCHAR(20)</td>
+    <td>考试学期</td>
     <td>exp. 2024-1</td>
   </tr>
   <tr>
     <td>teacher_id</td>
     <td>VARCHAR(50)</td>
+    <td>教师教工号</td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td rowspan="5">projects</td>
+    <td>project_id</td>
+    <td>VARCHAR(50)</td>
+    <td>项目编号</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>teacher_id</td>
+    <td>VARCHAR(50)</td>
+    <td>教师教工号</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>VARCHAR(100)</td>
+    <td>项目名称</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>budget</td>
+    <td>NUMERIC(10, 2)</td>
+    <td>项目预算</td>
+    <td>exp. 200000.00</td>
+  </tr>
+  <tr>
+    <td>creation_time</td>
+    <td>VARCHAR(20)</td>
+    <td>立项时间</td>
+    <td>exp. 2024.1</td>
+  </tr>
+
+  <tr>
+    <td rowspan="4">members</td>
+    <td>project_id</td>
+    <td>VARCHAR(50)</td>
+    <td>项目编号</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>teacher_id</td>
+    <td>VARCHAR(50)</td>
+    <td>教师教工号</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>student_id</td>
+    <td>VARCHAR(50)</td>
+    <td>学生学号</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>join_time</td>
+    <td>TIMESTAMP</td>
+    <td>加入时间</td>
     <td></td>
   </tr>
 </table>
