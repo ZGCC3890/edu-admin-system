@@ -24,7 +24,7 @@ bool isInside(ExMessage m, object x){
     return false;
 }
 
-void OutputText(int x, int y, COLORREF color, int nH, int nW, LPCTSTR str, LPCTSTR st){
+void OutputText(int x, int y, COLORREF color, LPCTSTR str, int nH, int nW,  LPCTSTR st){
     settextcolor(color);
     settextstyle(nH,nW,st);
     outtextxy(x, y, str);
@@ -49,23 +49,23 @@ void ButtonAnimation(ExMessage m, object x, COLORREF colorOn, COLORREF colorOff,
 void MenuAnimation(int n){
     if(msg.x >= 0 && msg.x <= 170) {
         if(msg.y >= 60 && msg.y <= 160 || n == 0)
-            OutputText(25, 100, YELLOW, 20, 0, "学生选课模块", "宋体");
-        else OutputText(25, 100, WHITE, 20, 0, "学生选课模块", "宋体");
+            OutputText(25, 100, YELLOW, "学生选课模块");
+        else OutputText(25, 100, WHITE, "学生选课模块");
         if(msg.y >= 160 && msg.y <= 260 || n == 1)
-            OutputText(25, 200, YELLOW, 20, 0, "教师管理模块", "宋体");
-        else OutputText(25, 200, WHITE, 20, 0, "教师管理模块", "宋体");
+            OutputText(25, 200, YELLOW, "教师管理模块");
+        else OutputText(25, 200, WHITE, "教师管理模块");
         if(msg.y >= 260 && msg.y <= 360 || n == 2)
-            OutputText(25, 300, YELLOW, 20, 0, "公告管理模块", "宋体");
-        else OutputText(25, 300, WHITE, 20, 0, "公告管理模块", "宋体");
+            OutputText(25, 300, YELLOW, "公告管理模块");
+        else OutputText(25, 300, WHITE, "公告管理模块");
         if(msg.y >= 360 && msg.y <= 460 || n == 3)
-            OutputText(25, 400, YELLOW, 20, 0, "用户管理模块", "宋体");
-        else OutputText(25, 400, WHITE, 20, 0, "用户管理模块", "宋体");
+            OutputText(25, 400, YELLOW, "用户管理模块");
+        else OutputText(25, 400, WHITE, "用户管理模块");
         if(msg.y >= 460 && msg.y <= 560 || n == 4)
-            OutputText(25, 500, YELLOW, 20, 0, "考试管理模块", "宋体");
-        else OutputText(25, 500, WHITE, 20, 0, "考试管理模块", "宋体");
+            OutputText(25, 500, YELLOW, "考试管理模块");
+        else OutputText(25, 500, WHITE, "考试管理模块");
         if(msg.y >= 760 && msg.y <= 860)
-            OutputText(65, 800, YELLOW, 20, 0, "退出", "宋体");
-        else OutputText(65, 800, WHITE, 20, 0, "退出", "宋体");
+            OutputText(65, 800, YELLOW, "退出");
+        else OutputText(65, 800, WHITE, "退出");
     }
 }
 

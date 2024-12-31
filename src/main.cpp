@@ -36,6 +36,9 @@ int main() {
             case MENU::USER_MGMT:
                 UserManagementGraph(localConnection);
                 break;
+            case MENU::EXAM_MGMT:
+                ExamManagementGraph(localConnection);
+                break;
             case MENU::END:
                 closegraph();
                 return 0;
@@ -71,21 +74,21 @@ void Menu(int n) {
     object menuSelect = {0, 60 + n * 100, 170, 100};
     fillrectangle_(menuSelect);
     if(n == 0)
-        OutputText(25, 100, YELLOW, 20, 0, "学生选课模块", "宋体");
-    else OutputText(25, 100, WHITE, 20, 0, "学生选课模块", "宋体");
+        OutputText(25, 100, YELLOW, "学生选课模块");
+    else OutputText(25, 100, WHITE, "学生选课模块");
     if(n == 1)
-        OutputText(25, 200, YELLOW, 20, 0, "教师管理模块", "宋体");
-    else OutputText(25, 200, WHITE, 20, 0, "教师管理模块", "宋体");
+        OutputText(25, 200, YELLOW, "教师管理模块");
+    else OutputText(25, 200, WHITE, "教师管理模块");
     if(n == 2)
-        OutputText(25, 300, YELLOW, 20, 0, "公告管理模块", "宋体");
-    else OutputText(25, 300, WHITE, 20, 0, "公告管理模块", "宋体");
+        OutputText(25, 300, YELLOW, "公告管理模块");
+    else OutputText(25, 300, WHITE, "公告管理模块");
     if(n == 3)
-        OutputText(25, 400, YELLOW, 20, 0, "用户管理模块", "宋体");
-    else OutputText(25, 400, WHITE, 20, 0, "用户管理模块", "宋体");
+        OutputText(25, 400, YELLOW, "用户管理模块");
+    else OutputText(25, 400, WHITE, "用户管理模块");
     if(n == 4)
-        OutputText(25, 500, YELLOW, 20, 0, "考试管理模块", "宋体");
-    else OutputText(25, 500, WHITE, 20, 0, "考试管理模块", "宋体");
-    OutputText(65, 800, WHITE, 20, 0, "退出", "宋体");
+        OutputText(25, 500, YELLOW, "考试管理模块");
+    else OutputText(25, 500, WHITE, "考试管理模块");
+    OutputText(65, 800, WHITE, "退出");
 }
 
 MENU MenuChoose() {
@@ -104,11 +107,18 @@ bool userName_ = false;
 bool userPassword_ = false;
 string s_userName;
 string s_userPassword;
-bool LoginCheck(const char* identity, pqxx::connection& conn){
+bool LoginCheck(const std::string& identity, pqxx::connection& conn){
     pqxx::work txn(conn);
+    pqxx::result result;
     // 参数化 SQL 查询
-    string sql = "SELECT COUNT(*) FROM users WHERE user_id = $1 AND password = $2 AND identity = $3";
-    pqxx::result result = txn.exec_params(sql, s_userName, s_userPassword, identity);
+    if(identity == "user"){
+        string sql = "SELECT COUNT(*) FROM users WHERE user_id = $1 AND password = $2";
+        result = txn.exec_params(sql, s_userName, s_userPassword);
+    }
+    else {
+        string sql = "SELECT COUNT(*) FROM users WHERE user_id = $1 AND password = $2 AND identity = $3";
+        result = txn.exec_params(sql, s_userName, s_userPassword, identity);
+    }
 
     // 检查结果并解析
     if (!result.empty()) {
@@ -133,7 +143,7 @@ std::string LoginGraph(const char* identity, pqxx::connection& conn, int menu) {
     setlinecolor(BLACK);
     fillroundrect_(userNameInputBar);
     fillroundrect_(userPasswordInputBar);
-    OutputText(loginButton.posx + 35, loginButton.posy + 8, WHITE, 20, 0, "登录", "宋体");
+    OutputText(loginButton.posx + 35, loginButton.posy + 8, WHITE, "登录");
 
     while (true) {
         flushmessage(EM_MOUSE);
@@ -143,11 +153,11 @@ std::string LoginGraph(const char* identity, pqxx::connection& conn, int menu) {
         ButtonAnimation(msg, userPasswordInputBar, BLACK, LIGHTGRAY, 1);
         ButtonAnimation(msg, loginButton);
 
-        if(userName_) OutputText(userNameInputBar.posx + 10, userNameInputBar.posy + 10, BLACK, 22, 0, s_userName.c_str(), "宋体");
-        else OutputText(userNameInputBar.posx + 10, userNameInputBar.posy + 8, RGB(150, 150, 150), 22, 0, "请输入用户id", "宋体");
+        if(userName_) OutputText(userNameInputBar.posx + 10, userNameInputBar.posy + 10, BLACK, s_userName.c_str(), 22);
+        else OutputText(userNameInputBar.posx + 10, userNameInputBar.posy + 8, RGB(150, 150, 150), "请输入用户id", 22);
 
-        if(userPassword_) OutputText(userPasswordInputBar.posx + 10, userPasswordInputBar.posy + 10, BLACK, 22, 0, s_userPassword.c_str(), "宋体");
-        else OutputText(userPasswordInputBar.posx + 10, userPasswordInputBar.posy + 8, RGB(150, 150, 150), 22, 0, "请输入用户密码", "宋体");
+        if(userPassword_) OutputText(userPasswordInputBar.posx + 10, userPasswordInputBar.posy + 10, BLACK, s_userPassword.c_str(), 22);
+        else OutputText(userPasswordInputBar.posx + 10, userPasswordInputBar.posy + 8, RGB(150, 150, 150), "请输入用户密码", 22);
 
         if (peekmessage(&msg, EM_MOUSE)) {
             switch (msg.message) {
