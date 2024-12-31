@@ -36,6 +36,9 @@ int main() {
             case MENU::USER_MGMT:
                 UserManagementGraph(localConnection);
                 break;
+            case MENU::EXAM_MGMT:
+                ExamManagementGraph(localConnection);
+                break;
             case MENU::END:
                 closegraph();
                 return 0;
@@ -104,11 +107,18 @@ bool userName_ = false;
 bool userPassword_ = false;
 string s_userName;
 string s_userPassword;
-bool LoginCheck(const char* identity, pqxx::connection& conn){
+bool LoginCheck(const std::string& identity, pqxx::connection& conn){
     pqxx::work txn(conn);
+    pqxx::result result;
     // 参数化 SQL 查询
-    string sql = "SELECT COUNT(*) FROM users WHERE user_id = $1 AND password = $2 AND identity = $3";
-    pqxx::result result = txn.exec_params(sql, s_userName, s_userPassword, identity);
+    if(identity == "user"){
+        string sql = "SELECT COUNT(*) FROM users WHERE user_id = $1 AND password = $2";
+        result = txn.exec_params(sql, s_userName, s_userPassword);
+    }
+    else {
+        string sql = "SELECT COUNT(*) FROM users WHERE user_id = $1 AND password = $2 AND identity = $3";
+        result = txn.exec_params(sql, s_userName, s_userPassword, identity);
+    }
 
     // 检查结果并解析
     if (!result.empty()) {

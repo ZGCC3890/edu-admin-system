@@ -129,28 +129,27 @@ void TeacherStudentProjectSearch(pqxx::connection& conn) {
     setfillcolor(WHITE);
     setlinecolor(BLACK);
     rectangle_({220, 105, 140, 30});
-    rectangle_({360, 105, 310, 30});
-    rectangle_({670, 105, 220, 30});
-    rectangle_({890, 105, 170, 30});
+    rectangle_({360, 105, 610, 30});
+    rectangle_({970, 105, 220, 30});
+    rectangle_({1190, 105, 170, 30});
     OutputText(220 + 10, 110, BLACK, 20, 0, "项目编号", "宋体");
     OutputText(360 + 10, 110, BLACK, 20, 0, "项目名称", "宋体");
-    OutputText(670 + 10, 110, BLACK, 20, 0, "项目预算", "宋体");
-    OutputText(890 + 10, 110, BLACK, 20, 0, "申请时间", "宋体");
-    std::cout << projectList.size() ;
+    OutputText(970 + 10, 110, BLACK, 20, 0, "项目预算", "宋体");
+    OutputText(1190 + 10, 110, BLACK, 20, 0, "申请时间", "宋体");
     if(projectList.size() > 0) {
         for (int i = 0; i < projectList.size(); ++i) {
             rectangle_({220, 135 + (i % 10) * 30, 140, 30});
-            rectangle_({360, 135 + (i % 10) * 30, 310, 30});
-            rectangle_({670, 135 + (i % 10) * 30, 220, 30});
-            rectangle_({890, 135 + (i % 10) * 30, 170, 30});
+            rectangle_({360, 135 + (i % 10) * 30, 610, 30});
+            rectangle_({970, 135 + (i % 10) * 30, 220, 30});
+            rectangle_({1190, 135 + (i % 10) * 30, 170, 30});
             OutputText(220 + 10, 135 + 5 + (i % 10) * 30, BLACK, 20, 0,
-                       lessonList[i]["project_id"].as<std::string>().c_str(), "宋体");
-            OutputText(360 + 10, 135 + 5 + (i % 10) * 30, BLACK, 20, 0, lessonList[i]["name"].as<std::string>().c_str(),
+                       projectList[i]["project_id"].as<std::string>().c_str(), "宋体");
+            OutputText(360 + 10, 135 + 5 + (i % 10) * 30, BLACK, 20, 0, projectList[i]["name"].as<std::string>().c_str(),
                        "宋体");
-            OutputText(670 + 10, 135 + 5 + (i % 10) * 30, BLACK, 20, 0,
-                       lessonList[i]["budget"].as<std::string>().c_str(), "宋体");
-            OutputText(890 + 10, 135 + 5 + (i % 10) * 30, BLACK, 20, 0,
-                       lessonList[i]["creation_time"].as<std::string>().c_str(), "宋体");
+            OutputText(970 + 10, 135 + 5 + (i % 10) * 30, BLACK, 20, 0,
+                       projectList[i]["budget"].as<std::string>().c_str(), "宋体");
+            OutputText(1190 + 10, 135 + 5 + (i % 10) * 30, BLACK, 20, 0,
+                       projectList[i]["creation_time"].as<std::string>().c_str(), "宋体");
         }
     }
     else {
