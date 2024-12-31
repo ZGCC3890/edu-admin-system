@@ -57,19 +57,19 @@ void StudentManagementGraph(pqxx::connection& conn) {
             ButtonAnimation(msg, dropButton[i%5]);
 
         if (courseId_){
-            OutputText(courseIdInputBar.posx + 10, courseIdInputBar.posy + 5, BLACK, 20, 0, s_courseId.c_str(), "宋体");
+            OutputText(courseIdInputBar.posx + 10, courseIdInputBar.posy + 5, BLACK, s_courseId.c_str());
         }else{
-            OutputText(courseIdInputBar.posx + 10, courseIdInputBar.posy + 5, RGB(150, 150, 150), 20, 0, "课程编号", "宋体");
+            OutputText(courseIdInputBar.posx + 10, courseIdInputBar.posy + 5, RGB(150, 150, 150), "课程编号");
         }
         if (courseName_){
-            OutputText(courseNameInputBar.posx + 10, courseNameInputBar.posy + 5, BLACK, 20, 0, s_courseName.c_str(), "宋体");
+            OutputText(courseNameInputBar.posx + 10, courseNameInputBar.posy + 5, BLACK, s_courseName.c_str());
         }else{
-            OutputText(courseNameInputBar.posx + 10, courseNameInputBar.posy + 5, RGB(150, 150, 150), 20, 0, "课程名称", "宋体");
+            OutputText(courseNameInputBar.posx + 10, courseNameInputBar.posy + 5, RGB(150, 150, 150), "课程名称");
         }
         if (courseTeacherName_){
-            OutputText(courseTeacherNameInputBar.posx + 10, courseTeacherNameInputBar.posy + 5, BLACK, 20, 0, s_courseTeacherName.c_str(), "宋体");
+            OutputText(courseTeacherNameInputBar.posx + 10, courseTeacherNameInputBar.posy + 5, BLACK, s_courseTeacherName.c_str());
         }else{
-            OutputText(courseTeacherNameInputBar.posx + 10, courseTeacherNameInputBar.posy + 5, RGB(150, 150, 150), 20, 0, "任课教师名称", "宋体");
+            OutputText(courseTeacherNameInputBar.posx + 10, courseTeacherNameInputBar.posy + 5, RGB(150, 150, 150), "任课教师名称");
         }
 
         if (peekmessage(&msg, EM_MOUSE)) {
@@ -201,7 +201,7 @@ void StudentManagementGraph(pqxx::connection& conn) {
     }
 }
 
-std::string GetStudentMajor(std::string student_id, pqxx::connection& conn) {
+std::string GetStudentMajor(const std::string& student_id, pqxx::connection& conn) {
     try {
         pqxx::work txn(conn);
         std::string sql = "SELECT major FROM students WHERE student_id = $1";
@@ -220,17 +220,17 @@ std::string GetStudentMajor(std::string student_id, pqxx::connection& conn) {
 
 void DrawCoursesTable(){
     setlinecolor(BLACK);
-    OutputText(220, 110, BLACK, 20, 0, "已选课程列表", "宋体");
+    OutputText(220, 110, BLACK, "已选课程列表");
     rectangle_({220, 135, 140, 30});
     rectangle_({360, 135, 310, 30});
     rectangle_({670, 135, 260, 30});
     rectangle_({930, 135, 220, 30});
     rectangle_({1150,135, 170, 30});
-    OutputText(220 + 10, 140, BLACK, 20, 0, "课程编号", "宋体");
-    OutputText(360 + 10, 140, BLACK, 20, 0, "课程名称", "宋体");
-    OutputText(670 + 10, 140, BLACK, 20, 0, "任课教师", "宋体");
-    OutputText(930 + 10, 140, BLACK, 20, 0, "上课时间", "宋体");
-    OutputText(1150 + 10,140, BLACK, 20, 0, "上课教室", "宋体");
+    OutputText(220 + 10, 140, BLACK, "课程编号");
+    OutputText(360 + 10, 140, BLACK, "课程名称");
+    OutputText(670 + 10, 140, BLACK, "任课教师");
+    OutputText(930 + 10, 140, BLACK, "上课时间");
+    OutputText(1150 + 10,140, BLACK, "上课教室");
     for (int i = selectedCourseCurPage * 5; i < std::min(selectedCourseCurPage * 5 + 5, selectedCourses.size()); ++i) {
         setlinecolor(BLACK);
         rectangle_({220, 165 + (i % 5) * 30, 140, 30});
@@ -238,29 +238,29 @@ void DrawCoursesTable(){
         rectangle_({670, 165 + (i % 5) * 30, 260, 30});
         rectangle_({930, 165 + (i % 5) * 30, 220, 30});
         rectangle_({1150,165 + (i % 5) * 30, 170, 30});
-        OutputText(220 + 10, 165 + 5 + (i % 5) * 30, BLACK, 20, 0, selectedCourses[i]["course_id"].as<std::string>().c_str(), "宋体");
-        OutputText(360 + 10, 165 + 5 + (i % 5) * 30, BLACK, 20, 0, selectedCourses[i]["course_name"].as<std::string>().c_str(), "宋体");
-        OutputText(670 + 10, 165 + 5 + (i % 5) * 30, BLACK, 20, 0, selectedCourses[i]["teacher_name"].as<std::string>().c_str(), "宋体");
-        OutputText(930 + 10, 165 + 5 + (i % 5) * 30, BLACK, 20, 0, selectedCourses[i]["schedule"].as<std::string>().c_str(), "宋体");
-        OutputText(1150 + 10,165 + 5 + (i % 5) * 30, BLACK, 20, 0, selectedCourses[i]["classroom"].as<std::string>().c_str(), "宋体");
+        OutputText(220 + 10, 165 + 5 + (i % 5) * 30, BLACK, selectedCourses[i]["course_id"].as<std::string>().c_str());
+        OutputText(360 + 10, 165 + 5 + (i % 5) * 30, BLACK, selectedCourses[i]["course_name"].as<std::string>().c_str());
+        OutputText(670 + 10, 165 + 5 + (i % 5) * 30, BLACK, selectedCourses[i]["teacher_name"].as<std::string>().c_str());
+        OutputText(930 + 10, 165 + 5 + (i % 5) * 30, BLACK, selectedCourses[i]["schedule"].as<std::string>().c_str());
+        OutputText(1150 + 10,165 + 5 + (i % 5) * 30, BLACK, selectedCourses[i]["classroom"].as<std::string>().c_str());
         dropButton[i % 5] = {1330, 167 + (i % 5) * 30, 80, 25};
         setfillcolor(CommonBlue);
         setlinecolor(CommonBlue);
         fillroundrect_(dropButton[i % 5]);
-        OutputText(1330 + 20, 170 + (i % 5) * 30, WHITE, 20, 0, "退课", "宋体");
+        OutputText(1330 + 20, 170 + (i % 5) * 30, WHITE, "退课");
     }
     setlinecolor(BLACK);
-    OutputText(220, 380, BLACK, 20, 0, "可选课程列表", "宋体");
+    OutputText(220, 380, BLACK, "可选课程列表");
     rectangle_({220, 405, 140, 30});
     rectangle_({360, 405, 310, 30});
     rectangle_({670, 405, 260, 30});
     rectangle_({930, 405, 220, 30});
     rectangle_({1150,405, 170, 30});
-    OutputText(220 + 10, 410, BLACK, 20, 0, "课程编号", "宋体");
-    OutputText(360 + 10, 410, BLACK, 20, 0, "课程名称", "宋体");
-    OutputText(670 + 10, 410, BLACK, 20, 0, "任课教师", "宋体");
-    OutputText(930 + 10, 410, BLACK, 20, 0, "上课时间", "宋体");
-    OutputText(1150 + 10,410, BLACK, 20, 0, "上课教室", "宋体");
+    OutputText(220 + 10, 410, BLACK, "课程编号");
+    OutputText(360 + 10, 410, BLACK, "课程名称");
+    OutputText(670 + 10, 410, BLACK, "任课教师");
+    OutputText(930 + 10, 410, BLACK, "上课时间");
+    OutputText(1150 + 10,410, BLACK, "上课教室");
     for (int i = availableCourseCurPage * 10; i < std::min(availableCourseCurPage * 10 + 10, availableCourses.size()); ++i) {
         //可选课程数据
         setlinecolor(BLACK);
@@ -269,22 +269,22 @@ void DrawCoursesTable(){
         rectangle_({670, 435 + (i % 10) * 30, 260, 30});
         rectangle_({930, 435 + (i % 10) * 30, 220, 30});
         rectangle_({1150,435 + (i % 10) * 30, 170, 30});
-        OutputText(220 + 10, 435 + 5 + (i % 10) * 30, BLACK, 20, 0, availableCourses[i]["course_id"].as<std::string>().c_str(), "宋体");
-        OutputText(360 + 10, 435 + 5 + (i % 10) * 30, BLACK, 20, 0, availableCourses[i]["course_name"].as<std::string>().c_str(), "宋体");
-        OutputText(670 + 10, 435 + 5 + (i % 10) * 30, BLACK, 20, 0, availableCourses[i]["teacher_name"].as<std::string>().c_str(), "宋体");
-        OutputText(930 + 10, 435 + 5 + (i % 10) * 30, BLACK, 20, 0, availableCourses[i]["schedule"].as<std::string>().c_str(), "宋体");
-        OutputText(1150 + 10,435 + 5 + (i % 10) * 30, BLACK, 20, 0, availableCourses[i]["classroom"].as<std::string>().c_str(), "宋体");
+        OutputText(220 + 10, 435 + 5 + (i % 10) * 30, BLACK, availableCourses[i]["course_id"].as<std::string>().c_str());
+        OutputText(360 + 10, 435 + 5 + (i % 10) * 30, BLACK, availableCourses[i]["course_name"].as<std::string>().c_str());
+        OutputText(670 + 10, 435 + 5 + (i % 10) * 30, BLACK, availableCourses[i]["teacher_name"].as<std::string>().c_str());
+        OutputText(930 + 10, 435 + 5 + (i % 10) * 30, BLACK, availableCourses[i]["schedule"].as<std::string>().c_str());
+        OutputText(1150 + 10,435 + 5 + (i % 10) * 30, BLACK, availableCourses[i]["classroom"].as<std::string>().c_str());
         //选课按钮
         if(availableCourses[i]["current_students"].as<int>() != availableCourses[i]["max_students"].as<int>()) {
             selectButton[i % 10] = {1330, 437 + (i % 10) * 30, 80, 25};
             setfillcolor(CommonBlue);
             setlinecolor(CommonBlue);
             fillroundrect_(selectButton[i % 10]);
-            OutputText(1330 + 20, 440 + (i % 10) * 30, WHITE, 20, 0, "选课", "宋体");
+            OutputText(1330 + 20, 440 + (i % 10) * 30, WHITE, "选课");
         }
         //上课人数
-        OutputText(1255, 435 + 10 + (i % 10) * 30, BLACK, 15, 0, availableCourses[i]["current_students"].as<std::string>().c_str(), "宋体");
-        OutputText(1275, 435 + 10 + (i % 10) * 30, BLACK, 15, 0, ("| " + availableCourses[i]["max_students"].as<std::string>()).c_str(), "宋体");
+        OutputText(1255, 435 + 10 + (i % 10) * 30, BLACK, availableCourses[i]["current_students"].as<std::string>().c_str(), 15);
+        OutputText(1275, 435 + 10 + (i % 10) * 30, BLACK, ("| " + availableCourses[i]["max_students"].as<std::string>()).c_str(), 15);
     }
 }
 
@@ -363,10 +363,10 @@ void PageButtonDrawing(){
         setlinecolor(CommonBlue);
         fillroundrect_(sCoursePageUpButton);
         fillroundrect_(sCoursePageDownButton);
-        OutputText(sCoursePageUpButton.posx + 15, sCoursePageUpButton.posy + 3, WHITE, 15, 0, "<=", "宋体");
-        OutputText(sCoursePageDownButton.posx + 15, sCoursePageDownButton.posy + 3, WHITE, 15, 0, "=>", "宋体");
-        OutputText(sCoursePageUpButton.posx + 70, sCoursePageUpButton.posy + 3, BLACK, 15, 0, std::to_string(selectedCourseCurPage + 1).c_str(), "宋体");
-        OutputText(sCoursePageUpButton.posx + 95, sCoursePageUpButton.posy + 3, BLACK, 15, 0, ("|  " + std::to_string(selectedCourseTotalPage + 1)).c_str(), "宋体");
+        OutputText(sCoursePageUpButton.posx + 15, sCoursePageUpButton.posy + 3, WHITE, "<=",15);
+        OutputText(sCoursePageDownButton.posx + 15, sCoursePageDownButton.posy + 3, WHITE, "=>", 15);
+        OutputText(sCoursePageUpButton.posx + 70, sCoursePageUpButton.posy + 3, BLACK, std::to_string(selectedCourseCurPage + 1).c_str(), 15);
+        OutputText(sCoursePageUpButton.posx + 95, sCoursePageUpButton.posy + 3, BLACK, ("|  " + std::to_string(selectedCourseTotalPage + 1)).c_str(), 15);
     }
 
     if (showACoursePageButton_){
@@ -374,16 +374,16 @@ void PageButtonDrawing(){
         setlinecolor(CommonBlue);
         fillroundrect_(aCoursePageUpButton);
         fillroundrect_(aCoursePageDownButton);
-        OutputText(aCoursePageUpButton.posx + 15, aCoursePageUpButton.posy + 3, WHITE, 15, 0, "<=", "宋体");
-        OutputText(aCoursePageDownButton.posx + 15, aCoursePageDownButton.posy + 3, WHITE, 15, 0, "=>", "宋体");
-        OutputText(aCoursePageUpButton.posx + 70, aCoursePageUpButton.posy + 3, BLACK, 15, 0, std::to_string(availableCourseCurPage + 1).c_str(), "宋体");
-        OutputText(aCoursePageUpButton.posx + 95, aCoursePageUpButton.posy + 3, BLACK, 15, 0, ("|  " + std::to_string(availableCourseTotalPage + 1)).c_str(), "宋体");
+        OutputText(aCoursePageUpButton.posx + 15, aCoursePageUpButton.posy + 3, WHITE, "<=", 15);
+        OutputText(aCoursePageDownButton.posx + 15, aCoursePageDownButton.posy + 3, WHITE, "=>", 15);
+        OutputText(aCoursePageUpButton.posx + 70, aCoursePageUpButton.posy + 3, BLACK, std::to_string(availableCourseCurPage + 1).c_str(), 15);
+        OutputText(aCoursePageUpButton.posx + 95, aCoursePageUpButton.posy + 3, BLACK, ("|  " + std::to_string(availableCourseTotalPage + 1)).c_str(), 15);
     }
 
 }
 
 void DrawingFilter() {
-    OutputText(220, 20, BLACK, 20, 0, "课程筛选", "宋体");
+    OutputText(220, 20, BLACK, "课程筛选");
     setlinecolor(CommonBlue);
     setfillcolor(CommonBlue);
     fillroundrect_({220, 45, 750, 50});
@@ -394,6 +394,6 @@ void DrawingFilter() {
     fillroundrect_(courseIdInputBar);
     fillroundrect_(courseNameInputBar);
     fillroundrect_(courseTeacherNameInputBar);
-    OutputText(courseSearchButton.posx + 30, courseSearchButton.posy + 5, WHITE, 20, 0, "筛选", "宋体");
-    OutputText(courseResetButton.posx + 10, courseResetButton.posy + 5, WHITE, 20, 0, "重置", "宋体");
+    OutputText(courseSearchButton.posx + 30, courseSearchButton.posy + 5, WHITE, "筛选");
+    OutputText(courseResetButton.posx + 10, courseResetButton.posy + 5, WHITE, "重置");
 }
