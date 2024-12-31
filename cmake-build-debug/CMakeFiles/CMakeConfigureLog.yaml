@@ -2051,3 +2051,539 @@ events:
         
       exitCode: 1
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:2 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CHARCONV_FLOAT"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_46296
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_46296.dir/PQXX_HAVE_CHARCONV_FLOAT.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CHARCONV_FLOAT.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_46296.dir/PQXX_HAVE_CHARCONV_FLOAT.cxx.obj -o cmTC_46296.exe -Wl,--out-implib,libcmTC_46296.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:6 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CHARCONV_INT"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_e70d2
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_e70d2.dir/PQXX_HAVE_CHARCONV_INT.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CHARCONV_INT.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_e70d2.dir/PQXX_HAVE_CHARCONV_INT.cxx.obj -o cmTC_e70d2.exe -Wl,--out-implib,libcmTC_e70d2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:10 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CMP"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_c662d
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_c662d.dir/PQXX_HAVE_CMP.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CMP.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_c662d.dir/PQXX_HAVE_CMP.cxx.obj -o cmTC_c662d.exe -Wl,--out-implib,libcmTC_c662d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:14 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CONCEPTS"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_e3930
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_e3930.dir/PQXX_HAVE_CONCEPTS.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CONCEPTS.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_e3930.dir/PQXX_HAVE_CONCEPTS.cxx.obj -o cmTC_e3930.exe -Wl,--out-implib,libcmTC_e3930.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:18 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_CXA_DEMANGLE"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_70ad1
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_70ad1.dir/PQXX_HAVE_CXA_DEMANGLE.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_CXA_DEMANGLE.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_70ad1.dir/PQXX_HAVE_CXA_DEMANGLE.cxx.obj -o cmTC_70ad1.exe -Wl,--out-implib,libcmTC_70ad1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:22 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_GCC_PURE"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_6d6ac
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_6d6ac.dir/PQXX_HAVE_GCC_PURE.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_GCC_PURE.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_6d6ac.dir/PQXX_HAVE_GCC_PURE.cxx.obj -o cmTC_6d6ac.exe -Wl,--out-implib,libcmTC_6d6ac.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:26 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_GCC_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_8720b
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_8720b.dir/PQXX_HAVE_GCC_VISIBILITY.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_GCC_VISIBILITY.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_8720b.dir/PQXX_HAVE_GCC_VISIBILITY.cxx.obj -o cmTC_8720b.exe -Wl,--out-implib,libcmTC_8720b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:30 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_LIKELY"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_7839f
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_7839f.dir/PQXX_HAVE_LIKELY.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_LIKELY.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_7839f.dir/PQXX_HAVE_LIKELY.cxx.obj -o cmTC_7839f.exe -Wl,--out-implib,libcmTC_7839f.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:34 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_MULTIDIM"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_b5b4b
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_b5b4b.dir/PQXX_HAVE_MULTIDIM.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_MULTIDIM.cxx
+        FAILED: CMakeFiles/cmTC_b5b4b.dir/PQXX_HAVE_MULTIDIM.cxx.obj 
+        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_b5b4b.dir/PQXX_HAVE_MULTIDIM.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_MULTIDIM.cxx
+        F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_MULTIDIM.cxx:5:4: error: #error "No PQXX_HAVE_MULTIDIM: __cpp_multidimensional_subscript is not set."
+            5 | #  error "No PQXX_HAVE_MULTIDIM: __cpp_multidimensional_subscript is not set."
+              |    ^~~~~
+        F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_MULTIDIM.cxx:8:4: error: #error "No PQXX_HAVE_MULTIDIM: __cpp_multidimensional_subscript is false."
+            8 | #  error "No PQXX_HAVE_MULTIDIM: __cpp_multidimensional_subscript is false."
+              |    ^~~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:38 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_PATH"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_5210b
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_5210b.dir/PQXX_HAVE_PATH.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_PATH.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_5210b.dir/PQXX_HAVE_PATH.cxx.obj -o cmTC_5210b.exe -Wl,--out-implib,libcmTC_5210b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:42 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_POLL"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_45444
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_45444.dir/PQXX_HAVE_POLL.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_POLL.cxx
+        FAILED: CMakeFiles/cmTC_45444.dir/PQXX_HAVE_POLL.cxx.obj 
+        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_45444.dir/PQXX_HAVE_POLL.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_POLL.cxx
+        F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_POLL.cxx:2:10: fatal error: poll.h: No such file or directory
+            2 | #include <poll.h>
+              |          ^~~~~~~~
+        compilation terminated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:46 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SLEEP_FOR"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_dbf07
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_dbf07.dir/PQXX_HAVE_SLEEP_FOR.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SLEEP_FOR.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_dbf07.dir/PQXX_HAVE_SLEEP_FOR.cxx.obj -o cmTC_dbf07.exe -Wl,--out-implib,libcmTC_dbf07.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:50 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SOURCE_LOCATION"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_7672a
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_7672a.dir/PQXX_HAVE_SOURCE_LOCATION.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SOURCE_LOCATION.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_7672a.dir/PQXX_HAVE_SOURCE_LOCATION.cxx.obj -o cmTC_7672a.exe -Wl,--out-implib,libcmTC_7672a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:54 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SPAN"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_cb115
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_cb115.dir/PQXX_HAVE_SPAN.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SPAN.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_cb115.dir/PQXX_HAVE_SPAN.cxx.obj -o cmTC_cb115.exe -Wl,--out-implib,libcmTC_cb115.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:58 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_SSIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_2cb5a
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_2cb5a.dir/PQXX_HAVE_SSIZE.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_SSIZE.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_2cb5a.dir/PQXX_HAVE_SSIZE.cxx.obj -o cmTC_2cb5a.exe -Wl,--out-implib,libcmTC_2cb5a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:62 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_STRERROR_R"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_24b03
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_24b03.dir/PQXX_HAVE_STRERROR_R.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_R.cxx
+        FAILED: CMakeFiles/cmTC_24b03.dir/PQXX_HAVE_STRERROR_R.cxx.obj 
+        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_24b03.dir/PQXX_HAVE_STRERROR_R.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_R.cxx
+        F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_R.cxx: In function 'int main()':
+        F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_R.cxx:11:12: error: 'strerror_r' was not declared in this scope; did you mean 'strerror_s'?
+           11 |   auto res{strerror_r(1, buffer, 200)};
+              |            ^~~~~~~~~~
+              |            strerror_s
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:66 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_STRERROR_S"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_2e634
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_2e634.dir/PQXX_HAVE_STRERROR_S.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_STRERROR_S.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_2e634.dir/PQXX_HAVE_STRERROR_S.cxx.obj -o cmTC_2e634.exe -Wl,--out-implib,libcmTC_2e634.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:70 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_THREAD_LOCAL"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_23ca2
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_23ca2.dir/PQXX_HAVE_THREAD_LOCAL.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_THREAD_LOCAL.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_23ca2.dir/PQXX_HAVE_THREAD_LOCAL.cxx.obj -o cmTC_23ca2.exe -Wl,--out-implib,libcmTC_23ca2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:74 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "PQXX_HAVE_YEAR_MONTH_DAY"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_e464d
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_e464d.dir/PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/PQXX_HAVE_YEAR_MONTH_DAY.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   CMakeFiles/cmTC_e464d.dir/PQXX_HAVE_YEAR_MONTH_DAY.cxx.obj -o cmTC_e464d.exe -Wl,--out-implib,libcmTC_e464d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "libpqxx/cmake/pqxx_cxx_feature_checks.cmake:78 (try_compile)"
+      - "libpqxx/cmake/config.cmake:21 (include)"
+      - "libpqxx/CMakeLists.txt:27 (include)"
+    directories:
+      source: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+      binary: "F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "F:/JetBrains/edu-admin-system/libpqxx/cmake"
+    buildResult:
+      variable: "no_need_fslib"
+      cached: true
+      stdout: |
+        Change Dir: 'F:/JetBrains/edu-admin-system/cmake-build-debug/build-libpqxx/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "D:/Jetbrain/CLion 2024.1.1/bin/ninja/win/x64/ninja.exe" -v cmTC_b83ba
+        [1/2] "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_b83ba.dir/no_need_fslib.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/no_need_fslib.cxx
+        FAILED: CMakeFiles/cmTC_b83ba.dir/no_need_fslib.cxx.obj 
+        "D:\\Jetbrain\\CLion 2024.1.1\\bin\\mingw\\bin\\g++.exe"   -std=c++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_b83ba.dir/no_need_fslib.cxx.obj -c F:/JetBrains/edu-admin-system/libpqxx/config-tests/no_need_fslib.cxx
+        F:/JetBrains/edu-admin-system/libpqxx/config-tests/no_need_fslib.cxx: In function 'int main()':
+        F:/JetBrains/edu-admin-system/libpqxx/config-tests/no_need_fslib.cxx:19:55: error: use of deleted function 'std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const wchar_t*) [with _Traits = char_traits<char>]'
+           19 |   std::cout << std::filesystem::path{"foo.bar"}.c_str() << '\\n';
+              |                                                       ^
+        In file included from D:/Jetbrain/CLion 2024.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream:41,
+                         from F:/JetBrains/edu-admin-system/libpqxx/config-tests/no_need_fslib.cxx:9:
+        D:/Jetbrain/CLion 2024.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:689:5: note: declared here
+          689 |     operator<<(basic_ostream<char, _Traits>&, const wchar_t*) = delete;
+              |     ^~~~~~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...

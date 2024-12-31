@@ -54,7 +54,7 @@ extern std::string s_userName;
 extern bool userPassword_;
 extern std::string s_userPassword;
 // µÇÂ¼¼ì²é
-bool LoginCheck(const char* identity, pqxx::connection& conn);
+bool LoginCheck(const std::string& identity, pqxx::connection& conn);
 // µÇÂ¼½çÃæ
 std::string LoginGraph(const char* identity, pqxx::connection& conn, int menu);
 

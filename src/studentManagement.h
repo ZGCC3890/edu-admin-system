@@ -39,7 +39,7 @@ extern pqxx::result availableCourses;       // 可选课表查询结果
 // 学生管理
 void StudentManagementGraph(pqxx::connection& conn);
 // 查询学生专业
-std::string GetStudentMajor(std::string student_id, pqxx::connection& conn);
+std::string GetStudentMajor(const std::string& student_id, pqxx::connection& conn);
 // 更新课程数据
 void SearchLessonData(pqxx::connection& conn);
 // 绘制表格
