@@ -67,26 +67,8 @@ void ExamManagementGraph(pqxx::connection& conn){
                             char s[100] = " ";
                             InputBox(s, 100, "«Î ‰»Î—ß∆⁄(20xx-x)£∫");
                             std::string session = s;
-                            for (int i = 0; i < studentList.size(); ++i) {
-                                if(!s_studentScore[i].empty()){
-                                    std::string commitScoreSQL = R"(
-                                        MERGE INTO scores AS target
-                                        USING (
-                                            SELECT $1 AS student_id, $2 AS exam_name, $3 AS grade, $4 AS session, $5 AS teacher_id
-                                        ) AS source
-                                        ON (target.student_id = source.student_id AND target.exam_name = source.exam_name AND target.session = source.session)
-                                        WHEN MATCHED THEN
-                                            UPDATE SET grade = source.grade,
-                                                        teacher_id = source.teacher_id
-                                        WHEN NOT MATCHED THEN
-                                            INSERT (student_id, exam_name, grade, session, teacher_id)
-                                            VALUES (source.student_id, source.exam_name, source.grade, source.session, source.teacher_id);
-                                    )";
-                                    pqxx::work txn(conn);
-                                    txn.exec_params(commitScoreSQL, studentList[i]["student_id"].as<std::string>(), s_courseName, s_studentScore[i], session, s_teacherId);
-                                    txn.commit();
-                                }
-                            }
+                            if(session.size() < 4) session = "1970-1";
+                            UpdateStudentScore(conn, session);
                         }
                         for (int i = 0; i < std::min(5, lessonList.size()); ++i) {
                             if(isInside(msg, registerButton[i])){
@@ -176,10 +158,12 @@ void IdentityAdminGraph(pqxx::connection& conn){
 }
 
 void ScoresRegister(pqxx::connection& conn, const std::string& s_course_id){
+    ClearWindow(320);
     std::string getStudentListSQL = R"(
-        SELECT e.student_id, s.name
+        SELECT e.student_id, s.name, COALESCE(sc.grade, 0) AS grade
         FROM enrollments e
         JOIN students s ON e.student_id = s.student_id
+        LEFT JOIN scores sc ON e.student_id = sc.student_id AND e.course_id = sc.course_id
         WHERE e.course_id = $1
             AND e.operation = 'select'
             AND e.enrollment_date = (
@@ -212,9 +196,29 @@ void ScoresRegister(pqxx::connection& conn, const std::string& s_course_id){
         rectangle_(scoreInputBar[i]);
         OutputText(220 + 10, 350 + 5 + (i % 15) * 30, BLACK, studentList[i]["student_id"].as<std::string>().c_str());
         OutputText(360 + 10, 350 + 5 + (i % 15) * 30, BLACK, studentList[i]["name"].as<std::string>().c_str());
+        OutputText(540 + 10, 350 + 5 + (i % 15) * 30, BLACK, studentList[i]["grade"].as<std::string>().c_str());
     }
 }
 
-void UpdateStudentScore(pqxx::connection& conn){
-
+void UpdateStudentScore(pqxx::connection& conn, std::string session){
+    for (int i = 0; i < studentList.size(); ++i) {
+        if(!s_studentScore[i].empty()){
+            std::string commitScoreSQL = R"(
+                MERGE INTO scores AS target
+                USING (
+                    SELECT $1 AS student_id, $2 AS exam_name, $3 AS grade, $4 AS session, $5 AS teacher_id, $6 AS course_id
+                ) AS source
+                ON (target.student_id = source.student_id AND target.exam_name = source.exam_name AND target.session = source.session)
+                WHEN MATCHED THEN
+                    UPDATE SET grade = source.grade,
+                                teacher_id = source.teacher_id
+                WHEN NOT MATCHED THEN
+                    INSERT (student_id, exam_name, grade, session, teacher_id, course_id)
+                    VALUES (source.student_id, source.exam_name, source.grade, source.session, source.teacher_id, source.course_id);
+            )";
+            pqxx::work txn(conn);
+            txn.exec_params(commitScoreSQL, studentList[i]["student_id"].as<std::string>(), s_courseName, s_studentScore[i], session, s_teacherId, s_courseId);
+            txn.commit();
+        }
+    }
 }

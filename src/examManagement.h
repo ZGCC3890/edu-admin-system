@@ -12,7 +12,6 @@ extern object commitButton;
 extern std::string s_userId;
 extern std::string s_userIdentity;
 extern std::string s_adminId;
-extern std::string s_courseId;
 extern std::string s_studentScore[100];
 // bool
 extern bool isTeacher_;
@@ -32,4 +31,6 @@ void IdentityAdminGraph(pqxx::connection& conn);
 void IdentityStudentGraph(pqxx::connection& conn);
 // 成绩登记
 void ScoresRegister(pqxx::connection& conn, const std::string& s_course_id);
+// 更新学生成绩
+void UpdateStudentScore(pqxx::connection& conn, std::string session);
 #endif //EDU_ADMIN_SYSTEM_EXAMMANAGEMENT_H
