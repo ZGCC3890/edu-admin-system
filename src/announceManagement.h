@@ -29,4 +29,6 @@ void AnnouncementsList(pqxx::connection& conn);
 void AnnouncementsEdit(pqxx::connection& conn, int announceIndex = -1);
 // 公告更新
 void UpdateAnnouncement(pqxx::connection& conn);
+// 公告内容显示
+void PrintAnnouncementArticle();
 #endif //CPP_SE_ANNOUNCEMANAGEMENT_H

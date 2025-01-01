@@ -102,12 +102,13 @@ void AnnouncementManagementGraph(pqxx::connection& conn){
                             default:
                                 if(s_article.size() < MAXLEN){
                                     s_article += msg.ch;
+                                }else{
+                                    HWND er = GetHWnd();
+                                    std::string tmp = "到达内容长度限制(" + std::to_string(MAXLEN) + ")";
+                                    MessageBox(er, tmp.c_str(), "错误", MB_OK);
                                 }
                         }
-                        setfillcolor(WHITE);
-                        setlinecolor(BLACK);
-                        fillrectangle_(announcementsArticleInputBar);
-                        OutputText(announcementsArticleInputBar.posx + 20, announcementsArticleInputBar.posy + 10, BLACK, s_article.c_str());
+                        PrintAnnouncementArticle();
                     }
 
             }
@@ -171,11 +172,9 @@ void AnnouncementsEdit(pqxx::connection& conn, int announcementIndex) {
     }else {
         s_title = s_article = " ";
     }
-    setfillcolor(WHITE);
+    PrintAnnouncementArticle();
     fillroundrect_(announcementsTitleInputBar);
-    fillroundrect_(announcementsArticleInputBar);
     OutputText(announcementsTitleInputBar.posx + 20, announcementsTitleInputBar.posy + 5, BLACK, s_title.c_str());
-    OutputText(announcementsArticleInputBar.posx + 20, announcementsArticleInputBar.posy + 10, BLACK, s_article.c_str());
 }
 
 void UpdateAnnouncement(pqxx::connection& conn) {
@@ -192,4 +191,14 @@ void UpdateAnnouncement(pqxx::connection& conn) {
     pqxx::work txn(conn);
     txn.exec_params(updateAnnouncementSQL, s_title, s_article, s_adminId);
     txn.commit();
+}
+
+void PrintAnnouncementArticle(){
+    setfillcolor(WHITE);
+    setlinecolor(BLACK);
+    fillrectangle_(announcementsArticleInputBar);
+    for (int i = 0; i < (s_article.size() / 60) + 1; ++i) {
+        std::string tmp = s_article.substr(i * 60, 60);
+        OutputText(announcementsArticleInputBar.posx + 20, announcementsArticleInputBar.posy + 10 + i * 35, BLACK, tmp.c_str());
+    }
 }
