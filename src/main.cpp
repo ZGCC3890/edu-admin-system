@@ -31,7 +31,7 @@ int main() {
                 TeacherManagementGraph(localConnection);
                 break;
             case MENU::ANNOUNCE_MGMT:
-                AnnounceManagementGraph(localConnection);
+                AnnouncementManagementGraph(localConnection);
                 break;
             case MENU::USER_MGMT:
                 UserManagementGraph(localConnection);

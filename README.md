@@ -346,7 +346,7 @@ branch-feature：开发分支，随时推送
     <td></td>
   </tr>
   <tr>
-    <td rowspan="4">announces</td>
+    <td rowspan="4">announcements</td>
     <td>title</td>
     <td>VARCHAR(50)</td>
     <td>公告标题</td>
