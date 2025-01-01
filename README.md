@@ -354,7 +354,7 @@ branch-feature：开发分支，随时推送
   </tr>
   <tr>
     <td>article</td>
-    <td>VARCHAR(1000)</td>
+    <td>VARCHAR(10000)</td>
     <td>公告内容</td>
     <td></td>
   </tr>
